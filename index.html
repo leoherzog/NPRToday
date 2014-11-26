@@ -90,19 +90,6 @@
 <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
 <meta name="mobile-web-app-capable" content="yes">
 
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js?onload=tick"></script>
-
-<script>
-    function tickTock() {
-	    var rightnow = moment().format("dddd, MMMM Do, YYYY, h:mm a");
-	    document.getElementById('date').innerHTML = rightnow;
-    }
-
-    window.onload = function () {
-        setInterval(tickTock, 1000);
-    }
-</script>
-
 <script type="text/javascript">
 
 function getWindowSize() {
@@ -250,6 +237,7 @@ function setbkg(){
         // adjusting the height of the hand    
         hand.style.height = Math.round(fullHandSize)+'px';
         hand.style.WebkitTransformOrigin = "center bottom";
+        hand.style.MozTransformOrigin = "center bottom";
 
         // after the fakeImg is loaded, then we update the real one
         imgBg.src = this.src;
@@ -281,7 +269,8 @@ function updateMinuteHand() {
     var radius = radMinute*m + radSecond*s;
 
     var hand = document.getElementById('minuteHand');
-    hand.style.WebkitTransform = "rotate("+radius+"deg)";    
+    hand.style.WebkitTransform = "rotate("+radius+"deg)";
+    hand.style.MozTransform = "rotate(" + radius + "deg)";
 
     clearTimeout(delayMinuteHand);     
     delayMinuteHand = setTimeout(updateMinuteHand,1000);
@@ -314,13 +303,12 @@ function updateMinuteHand() {
 <body onload='setbkg()' onresize='setbkg()'>
 <center>
     <div id='divContainer' style='position:relative'>
-        <img id='myBkg' style='position:absolute; top:0px; right:8px'/>
-        <div id='minuteHand' style='position:absolute; top:0px; left:0px; background:red; width:2px; WebkitTransformOrigin:0 0;'></div>
+        <img id='myBkg' style='position:absolute;top:0px;right:8px'/>
+        <div id='minuteHand' style='position:absolute;top:0px;left:0px;background:red;width:2px;WebkitTransformOrigin:0 0;MozTransformOrigin:0 0;'></div>
     </div>
     <div id="logo">
         <h1>NPR <span style="color:#3266CC;">Today</span></h1>
         <p id="subtitle" style="margin-top:-40px;margin-left:-60px;">An hourly NPR News clock</p>
-        <div id="date" style="margin-top:-16px;margin-left:-42px;"></div>
     </div>
     <div id="about">
         <p><a href="/about">About this site...</a></p>
