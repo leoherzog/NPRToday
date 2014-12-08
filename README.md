@@ -7,5 +7,7 @@
     <p>Feel free to take a look at the source and adapt as you please.</p>
     <p>This website, and all of it's material, is licensed as follows:<br /><br />
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">NPR.Today</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    <br />
+    <p>If you feel so inclined, <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3QSLHAJW2FVBQ" target="_blank">buy me a coffee</a>. Thanks!
   </body>
 </html>
