@@ -295,8 +295,11 @@
     <link rel="stylesheet" type="text/css" href="a2h/add2home.css">
     <script>
         addToHomescreen({
-            skipFirstVisit: true,
-            maxDisplayCount: 1
+        skipFirstVisit: true,
+        maxDisplayCount: 1
+        onAdd: function () {
+              ga('send', 'event', 'addtohomescreen', 'yes');
+            }
         });
     </script>
     
