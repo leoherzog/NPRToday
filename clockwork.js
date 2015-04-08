@@ -165,11 +165,11 @@ function setbkg(){
 delayMinuteHand = null;
 
 function updateMinuteHand() {
-    var d = moment();
+    var h = moment().tz('America/Los_Angeles').get('hour');
     var m = moment().tz('America/Los_Angeles').get('minute');
     var s = moment().tz('America/Los_Angeles').get('second');
     
-    console.log("Updating Minute Hand: " + m + " " +s);
+    console.log("Updating Minute Hand: " + h + ":" + m + ":" +s);
     
     var radMinute = 360/60;
     var radSecond = radMinute/60;
