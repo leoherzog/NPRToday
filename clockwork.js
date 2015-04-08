@@ -87,7 +87,7 @@ function setbkg(){
         [['code1',1],['code2',4],['code3',2]] ->
         ['code1','code2','code2','code2','code2','code3','code3']
         */
-        var w = d.getDay();
+        var w = moment().tz('America/New_York').get('day');
         img = dayImg[w]; // like this
     }
     
@@ -164,9 +164,9 @@ function setbkg(){
 delayMinuteHand = null;
 
 function updateMinuteHand() {
-    var h = moment().tz('America/Los_Angeles').get('hour');
-    var m = moment().tz('America/Los_Angeles').get('minute');
-    var s = moment().tz('America/Los_Angeles').get('second');
+    var h = moment().tz('America/New_York').get('hour');
+    var m = moment().tz('America/New_York').get('minute');
+    var s = moment().tz('America/New_York').get('second');
     
     console.log("Updating Minute Hand: " + h + ":" + m + ":" +s);
     
