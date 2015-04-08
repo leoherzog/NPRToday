@@ -65,7 +65,7 @@ function setbkg(){
     
     var img = null;
     
-    console.log("Background Image: " + d);
+    console.log("Background Image (hour): " + h);
     
     // if this hour is not yet configured
     if (!thisHour) {
