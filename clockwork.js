@@ -163,11 +163,11 @@ function setbkg(){
 delayMinuteHand = null;
 
 function updateMinuteHand() {
-    var d = new Date();
+    var dt = new timezoneJS.Date('America/New_York');
+    console.log(dt);
+    var d = Date();
     var m = d.getMinutes();
     var s = d.getSeconds();
-    
-    console.log(d);
     
     var radMinute = 360/60;
     var radSecond = radMinute/60;
