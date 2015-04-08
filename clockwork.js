@@ -165,7 +165,7 @@ function setbkg(){
 delayMinuteHand = null;
 
 function updateMinuteHand() {
-    var d = new Date();
+    var d = new moment.tz('America/New_York')
     var m = d.getMinutes();
     var s = d.getSeconds();
     
