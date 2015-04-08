@@ -166,10 +166,10 @@ delayMinuteHand = null;
 
 function updateMinuteHand() {
     var d = moment();
-    var m = moment().get('minute');
-    var s = moment().get('second');
+    var m = moment().tz('America/New_York').get('minute');
+    var s = moment().tz('America/New_York').get('second');
     
-    console.log("Updating Minute Hand: " + d);
+    console.log("Updating Minute Hand: " + m + " " +s);
     
     var radMinute = 360/60;
     var radSecond = radMinute/60;
