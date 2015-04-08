@@ -66,6 +66,8 @@ function setbkg(){
     
     var img = null;
     
+    console.log("Background Image: " + d);
+    
     // if this hour is not yet configured
     if (!thisHour) {
         console.error('The hour '+h+' is not configured yet.');
@@ -166,6 +168,8 @@ function updateMinuteHand() {
     var d = new Date();
     var m = d.getMinutes();
     var s = d.getSeconds();
+    
+    console.log("Updating Minute Hand: " + d);
     
     var radMinute = 360/60;
     var radSecond = radMinute/60;
