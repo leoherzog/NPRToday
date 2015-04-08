@@ -167,7 +167,7 @@ function updateMinuteHand() {
     var m = d.getMinutes();
     var s = d.getSeconds();
     
-    console.log(Date);
+    console.log(d);
     
     var radMinute = 360/60;
     var radSecond = radMinute/60;
