@@ -166,8 +166,8 @@ delayMinuteHand = null;
 
 function updateMinuteHand() {
     var d = moment();
-    var m = d.getMinutes();
-    var s = d.getSeconds();
+    var m = moment().get('minute');
+    var s = moment().get('second');
     
     console.log("Updating Minute Hand: " + d);
     
