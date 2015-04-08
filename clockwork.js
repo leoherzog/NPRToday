@@ -163,7 +163,7 @@ function setbkg(){
 delayMinuteHand = null;
 
 function updateMinuteHand() {
-    var d = Date();
+    var d = new Date();
     var m = d.getMinutes();
     var s = d.getSeconds();
     
