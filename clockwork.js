@@ -60,7 +60,7 @@ function setbkg(){
     ];
     
     // getting the array for this hour
-    var h = moment().tz('America/Los_Angeles').get('hour');
+    var h = moment().tz('America/New_York').get('hour');
     var thisHour = program[h];
     
     var img = null;
