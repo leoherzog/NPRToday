@@ -163,8 +163,6 @@ function setbkg(){
 delayMinuteHand = null;
 
 function updateMinuteHand() {
-    var dt = new timezoneJS.Date('America/New_York');
-    console.log(dt);
     var d = Date();
     var m = d.getMinutes();
     var s = d.getSeconds();
