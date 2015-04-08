@@ -59,9 +59,8 @@ function setbkg(){
     [['other2014.png',1],['atc2014.png',5],['other2014.png',1]],
     ];
     
-    var d = new Date();
     // getting the array for this hour
-    var h = d.getHours();
+    var h = moment().tz('America/Los_Angeles').get('hour');
     var thisHour = program[h];
     
     var img = null;
