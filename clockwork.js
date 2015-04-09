@@ -134,7 +134,7 @@ function setbkg(){
         var hand = document.getElementById('minuteHand');
         // centering the hand horizontally
         var left = div_w/2;
-        hand.style.left = left+'px';
+        hand.style.left = (left+1)+'px';
         
         // adjusting the distance from the top
         hand.style.top = Math.round(paddingTop - outerHand)+'px';
