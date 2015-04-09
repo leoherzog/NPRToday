@@ -227,20 +227,6 @@
 		return out.sort();
 	}
 
-	function addLink (aliases) {
-		var i, alias;
-
-		if (typeof aliases === "string") {
-			aliases = [aliases];
-		}
-
-		for (i = 0; i < aliases.length; i++) {
-			alias = aliases[i].split('|');
-			pushLink(alias[0], alias[1]);
-			pushLink(alias[1], alias[0]);
-		}
-	}
-
 	function upgradeLinksToZones (zoneName) {
 		if (!links[zoneName]) {
 			return;
@@ -276,7 +262,6 @@
 
 	function loadData (data) {
 		addZone(data.zones);
-		addLink(data.links);
 		tz.dataVersion = data.version;
 	}
 
@@ -322,7 +307,6 @@
 	tz._zones       = zones;
 	tz._links       = links;
 	tz.add          = addZone;
-	tz.link         = addLink;
 	tz.load         = loadData;
 	tz.zone         = getZone;
 	tz.zoneExists   = zoneExists; // deprecated in 0.1.0
