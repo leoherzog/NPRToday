@@ -171,11 +171,11 @@ function updateMinuteHand() {
     
     // if you do NOT want the hand to move as the seconds go, just set 'radSecond' to zero
     
-    var radius = radMinute*m + radSecond*s;
+    var radius = radMinute*m + radSecond*s - 5; // -5 seconds to account for small lag behind real time in mp3 stream
     
     var hand = document.getElementById('minuteHand');
     hand.style.WebkitTransform = "rotate("+radius+"deg)";
-    hand.style.MozTransform = "rotate(" + radius + "deg)";
+    hand.style.MozTransform = "rotate("+radius+"deg)";
     
     clearTimeout(delayMinuteHand);
     delayMinuteHand = setTimeout(updateMinuteHand,1000);
