@@ -143,6 +143,7 @@ function setbkg(){
         hand.style.height = Math.round(fullHandSize)+'px';
         hand.style.WebkitTransformOrigin = "center bottom";
         hand.style.MozTransformOrigin = "center bottom";
+        hand.style.transformOrigin = "center bottom";
         
         // after the fakeImg is loaded, then we update the real one
         imgBg.src = this.src;
@@ -176,6 +177,7 @@ function updateMinuteHand() {
     var hand = document.getElementById('minuteHand');
     hand.style.WebkitTransform = "rotate("+radius+"deg)";
     hand.style.MozTransform = "rotate("+radius+"deg)";
+    hand.style.transformOrigin = "rotate("+radius+"deg)";
     
     clearTimeout(delayMinuteHand);
     delayMinuteHand = setTimeout(updateMinuteHand,1000);
