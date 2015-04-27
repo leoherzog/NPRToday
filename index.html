@@ -113,6 +113,7 @@
         <script src="clockwork.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.0/moment.min.js"></script>
         <script src="moment-timezone-with-data.js"></script>
+        <link rel="stylesheet" type="text/css" href="animate.css">
         <script src="a2h/add2home.js"></script>
         <link rel="stylesheet" type="text/css" href="a2h/add2home.css">
         
@@ -141,7 +142,7 @@
 
     <body onload='setbkg()' onresize='setbkg()'>
         <center>
-            <div id='divContainer' style='position:relative'>
+            <div class="animated bounceIn" id='divContainer' style='position:relative'>
                 <img id='myBkg' style='position:absolute;top:0px;right:8px'/>
                 <div id='minuteHand' style='position:absolute;top:0px;left:0px;background:red;width:2px;WebkitTransformOrigin:0 0;MozTransformOrigin:0 0;transformOrigin:0 0'></div>
             </div>
