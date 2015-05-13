@@ -168,7 +168,7 @@ function updateMinuteHand() {
     var s = moment().tz('America/New_York').get('second');
     
     var radMinute = 360/60;
-    var radSecond = (radMinute-1)/60; // -1 to account for small lag behind real time in mp3 stream
+    var radSecond = (radMinute-1.5)/60; // -1.5 to account for small lag behind real time in mp3 stream
     
     // if you do NOT want the hand to move as the seconds go, just set 'radSecond' to zero
     
