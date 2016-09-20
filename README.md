@@ -17,4 +17,4 @@ This website, and all of it's material, is licensed as follows:
 
 * * *
 
-If you want to say thanks, turn Adblock off on the site or [buy me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3QSLHAJW2FVBQ). Thanks!
+If you want to say thanks, turn Adblock off on the site or [buy me a coffee](https://paypal.me/leoherzog). Thanks!
