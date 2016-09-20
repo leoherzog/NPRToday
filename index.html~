@@ -103,9 +103,9 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="theme-color" content="#FF3300">
         <script src="clockwork.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
         <script src="moment-timezone-with-data.js"></script>
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="animate.css">
         <script src="a2h/add2home.js"></script>
         <link rel="stylesheet" type="text/css" href="a2h/add2home.css">
         
