@@ -1,171 +1,168 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        
-        <style>
-            
-            @import url(http://fonts.googleapis.com/css?family=Yeseva+One|Francois+One);
-            
-            body {
-                font-family: 'Francois One', sans-serif;
-                margin: 0px;
-                background-color: white;
-            }
-            
+
+<head>
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Yeseva+One|Francois+One);
+        body {
+            font-family: 'Francois One', sans-serif;
+            margin: 0px;
+            background-color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-family: 'Yeseva One', cursive;
+            color: #FF3300;
+        }
+
+        #logo {
+            position: fixed;
+            top: 4px;
+            left: 24px;
+            margin-top: -20px;
+        }
+
+        #subtitle {
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        #key {
+            font-size: .8em;
+            text-align: left;
+            position: fixed;
+            top: 4px;
+            left: 24px;
+            margin-top: 86px;
+        }
+
+        #stream {
+            position: fixed;
+            bottom: 8px;
+            right: 80px;
+        }
+
+        #about {
+            position: fixed;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        #adsense {
+            position: fixed;
+            bottom: 6px;
+            left: 6px;
+            width: 240px;
+            height: 66px;
+        }
+
+        @media screen and (max-width: 719px) {
             h1 {
-                font-size: 3em;
-                font-family: 'Yeseva One', cursive;
-                color: #FF3300;
+                font-size: 1.2em;
             }
-            
             #logo {
                 position: fixed;
-                top: 4px;
-                left: 24px;
-                margin-top: -20px;
+                top: 2px;
+                margin-top: 0px;
             }
-            
             #subtitle {
-                margin-top:-40px;
-                margin-left: 20px;
+                display: none;
             }
-            
             #key {
-                font-size: .8em;
-                text-align: left;
-                position: fixed;
-                top: 4px;
-                left: 24px;
-                margin-top: 86px;
+                display: none;
             }
-            
-            #stream {
-                position: fixed;
-                bottom: 12px;
-                right: 8px;
-            }
-            
-            #about {
-                font-size: .6em;
-                position: fixed;
-                bottom: -6px;
-                right: 0px;
-            }
-            
             #adsense {
-                position: fixed;
-                bottom: 6px;
-                left: 6px;
-                width: 240px;
-                height: 66px;
+                display: none;
             }
-            
-            @media screen and (max-width: 719px) {
-                
-                h1 {
-                    font-size: 1.2em;
-                }
-                
-                #logo {
-                    position: fixed;
-                    top: 2px;
-                    margin-top: 0px;
-                }
-                
-                #subtitle {
-                    display: none;
-                }
-                
-                #key {
-                    display: none;
-                }
-                
-                #adsense {
-                    display: none;
-                }
-                
-            }
-        </style>
-        
-        <meta charset="utf-8">
-        <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
-        <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
-        <meta name="author" content="Agent L Productions | agentl.productions">
-        <title>NPR Today</title>
-        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npr-today/dhelpjcffnpoeobkjgklgcfdgjcahmae">
-        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
-        <link rel="apple-touch-icon" href="img/nprtoday.png" />
-        <link rel="apple-touch-icon-precomposed" href="img/nprtoday.png" />
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-title" content="NPR Today">
-        <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="theme-color" content="#FF3300">
-        <script src="clockwork.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
-        <script src="moment-timezone-with-data.js"></script>
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <script src="a2h/add2home.js"></script>
-        <link rel="stylesheet" type="text/css" href="a2h/add2home.css">
-        
-        <script>
-            addToHomescreen({
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
+    <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
+    <meta name="author" content="Agent L Productions | agentl.productions">
+    <title>NPR Today</title>
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npr-today/dhelpjcffnpoeobkjgklgcfdgjcahmae">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+    <link rel="apple-touch-icon" href="img/nprtoday.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/nprtoday.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="NPR Today">
+    <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#FF3300">
+    <script src="clockwork.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
+    <script src="moment-timezone-with-data.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="a2h/add2home.js"></script>
+    <link rel="stylesheet" type="text/css" href="a2h/add2home.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+        addToHomescreen({
             skipFirstVisit: true,
             maxDisplayCount: 1,
-            onAdd: function () {
-                  ga('send', 'event', 'addtohomescreen', 'yes');
-                }
-            });
-        </script>
-        
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            
-            ga('create', 'UA-51976003-1', 'auto');
-            ga('require', 'displayfeatures');
-            ga('send', 'pageview');
-        </script>
-        
-    </head>
+            onAdd: function() {
+                ga('send', 'event', 'addtohomescreen', 'yes');
+            }
+        });
+    </script>
 
-    <body onload='setbkg()' onresize='setbkg()'>
-        <div class="animated bounceIn" id='divContainer' style='position:relative;margin-left:auto;margin-right:auto;'>
-            <img id='myBkg' style='position:absolute;width:50%;top:0px;left:-6px'/>
-            <div id='minuteHand' style='position:absolute;top:0px;left:0px;background:red;width:2px;WebkitTransformOrigin:0 0;MozTransformOrigin:0 0;transformOrigin:0 0'></div>
-        </div>
-        <div id="logo">
-            <h1>NPR <span style="color:#3266CC;">Today</span></h1>
-            <p id="subtitle">An hourly NPR News clock</p>
-            <p id="key" style="line-height:90%;">
-                <span style="font-size:2em;color:#C0C0C2;">&#9632;</span> - Segment<br />
-                <span style="font-size:2em;color:#231F20;">&#9632;</span> - Newscast<br />
-                <span style="font-size:2em;color:#7EB3D2;">&#9632;</span> - Promo<br />
-                <span style="font-size:2em;color:#73A1AD;">&#9632;</span> - Music Bed<br />
-                <span style="font-size:2em;color:#EE2A2C;">&#9632;</span> - Funding Credit<br />
-            </p>
-        </div>
-        <div id="about">
-            <p><a href="/about">About this site...</a></p>
-        </div>
-        <div id="stream">
-            <audio src="//nprdmp-live01-mp3.akacast.akamaistream.net/7/998/364916/v1/npr.akacast.akamaistream.net/nprdmp_live01_mp3" type="audio/mpeg" autoplay controls>
-                Please <a href="http://browsehappy.com/" target="_blank">update your browser</a> to a modern browser in order to play audio        
-            </audio>
-        </div>
-        <div id="adsense">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:234px;height:60px"
-                 data-ad-client="ca-pub-9544720367752359"
-                 data-ad-slot="5365959101"></ins>
-            <script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51976003-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body onload='setbkg()' onresize='setbkg()'>
+    <div class="animated bounceIn" id='divContainer' style='position:relative;margin-left:auto;margin-right:auto;'>
+        <img id='myBkg' style='position:absolute;width:50%;top:0px;left:-6px' />
+        <div id='minuteHand' style='position:absolute;top:0px;left:0px;background:red;width:2px;WebkitTransformOrigin:0 0;MozTransformOrigin:0 0;transformOrigin:0 0'></div>
+    </div>
+    <div id="logo">
+        <h1>NPR <span style="color:#3266CC;">Today</span></h1>
+        <p id="subtitle">An hourly NPR News clock</p>
+        <p id="key" style="line-height:90%;">
+            <span style="font-size:2em;color:#C0C0C2;">&#9632;</span> - Segment<br />
+            <span style="font-size:2em;color:#231F20;">&#9632;</span> - Newscast<br />
+            <span style="font-size:2em;color:#7EB3D2;">&#9632;</span> - Promo<br />
+            <span style="font-size:2em;color:#73A1AD;">&#9632;</span> - Music Bed<br />
+            <span style="font-size:2em;color:#EE2A2C;">&#9632;</span> - Funding Credit<br />
+        </p>
+    </div>
+    <div id="about">
+        <a class="github-button" href="https://github.com/xd1936/nprtoday" data-icon="octicon-star" aria-label="Star xd1936/nprtoday on GitHub">Star</a>
+    </div>
+    <div id="stream">
+        <audio src="//nprdmp-live01-mp3.akacast.akamaistream.net/7/998/364916/v1/npr.akacast.akamaistream.net/nprdmp_live01_mp3" type="audio/mpeg" autoplay controls>
+            Please <a href="http://browsehappy.com/" target="_blank">update your browser</a> to a modern browser in order to play audio
+        </audio>
+    </div>
+    <div id="adsense">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:inline-block;width:234px;height:60px" data-ad-client="ca-pub-9544720367752359" data-ad-slot="5365959101"></ins>
+        <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-    </body>
+        </script>
+    </div>
+</body>
 
 </html>
