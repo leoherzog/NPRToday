@@ -3,6 +3,48 @@
 
 <head>
 
+    <meta charset="utf-8">
+    <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
+    <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
+    <meta name="author" content="Agent L Productions | agentl.productions">
+    
+    <title>NPR Today</title>
+    
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npr-today/dhelpjcffnpoeobkjgklgcfdgjcahmae">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+    <link rel="apple-touch-icon" href="img/nprtoday.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/nprtoday.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="NPR Today">
+    <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#FF3300">
+    
+    <script src="clockwork.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="moment-timezone-with-data.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51976003-1', 'auto');
+        ga('require', 'GTM-M2W3MVZ');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+    
     <style>
         @import url(http://fonts.googleapis.com/css?family=Yeseva+One|Francois+One);
         body {
@@ -35,6 +77,30 @@
             top: 4px;
             left: 24px;
             margin-top: 86px;
+        }
+        
+        #clock {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #clockface {
+            position: absolute;
+            width: 50%;
+            top: 0px;
+            left: -6px;
+        }
+        
+        #minuteHand {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: red;
+            width: 2px;
+            WebkitTransformOrigin: 0 0;
+            MozTransformOrigin: 0 0;
+            transformOrigin: 0 0;
         }
 
         #stream {
@@ -78,52 +144,12 @@
         }
     </style>
 
-    <meta charset="utf-8">
-    <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
-    <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
-    <meta name="author" content="Agent L Productions | agentl.productions">
-    <title>NPR Today</title>
-    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npr-today/dhelpjcffnpoeobkjgklgcfdgjcahmae">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
-    <link rel="apple-touch-icon" href="img/nprtoday.png" />
-    <link rel="apple-touch-icon-precomposed" href="img/nprtoday.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="NPR Today">
-    <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#FF3300">
-    <script src="clockwork.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
-    <script src="moment-timezone-with-data.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-51976003-1', 'auto');
-        ga('require', 'GTM-M2W3MVZ');
-        ga('require', 'displayfeatures');
-        ga('send', 'pageview');
-    </script>
-
 </head>
 
 <body onload='setbkg()' onresize='setbkg()'>
-    <div class="animated bounceIn" id='divContainer' style='position:relative;margin-left:auto;margin-right:auto;'>
-        <img id='myBkg' style='position:absolute;width:50%;top:0px;left:-6px' />
-        <div id='minuteHand' style='position:absolute;top:0px;left:0px;background:red;width:2px;WebkitTransformOrigin:0 0;MozTransformOrigin:0 0;transformOrigin:0 0'></div>
+    <div id='clock'>
+        <img id='clockface' />
+        <div id='minuteHand'></div>
     </div>
     <div id="logo">
         <h1>NPR <span style="color:#3266CC;">Today</span></h1>
