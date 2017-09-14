@@ -150,7 +150,7 @@ function setbkg() {
     };
 
     // we need to create a fake image to get its size and adjust everything
-    fakeImg.src = 'http://npr.today/img/' + img;
+    fakeImg.src = 'https://npr.today/img/' + img;
 
     // we'll check again every 5 seconds
     clearTimeout(waitForIt);
