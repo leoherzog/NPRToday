@@ -7,9 +7,9 @@
     <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
     <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
     <meta name="author" content="Agent L Productions | agentl.productions">
-    
+
     <title>NPR Today</title>
-    
+
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npr-today/dhelpjcffnpoeobkjgklgcfdgjcahmae">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
@@ -20,16 +20,16 @@
     <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#FF3300">
-    
+
     <script src="clockwork.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="moment-timezone-with-data.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
@@ -44,7 +44,7 @@
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
     </script>
-    
+
     <style>
         @import url(https://fonts.googleapis.com/css?family=Yeseva+One|Francois+One);
         body {
@@ -78,20 +78,20 @@
             left: 24px;
             margin-top: 86px;
         }
-        
+
         #clock {
             position: relative;
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         #clockface {
             position: absolute;
             width: 50%;
             top: 0px;
             left: -6px;
         }
-        
+
         #minuteHand {
             position: absolute;
             top: 0px;
@@ -166,7 +166,9 @@
         <a class="github-button" href="https://github.com/xd1936/nprtoday" data-icon="octicon-star" aria-label="Star xd1936/nprtoday on GitHub">Star</a>
     </div>
     <div id="stream">
-        <audio src="//nprdmp-live01-mp3.akacast.akamaistream.net/7/998/364916/v1/npr.akacast.akamaistream.net/nprdmp_live01_mp3" type="audio/mpeg" autoplay controls>
+        <audio autoplay controls>
+            <source src="//nprdmp-live01-aac.akacast.akamaistream.net/7/91/364917/v1/npr.akacast.akamaistream.net/nprdmp_live01_aac" type="audio/aac" />
+            <source src="//nprdmp-live01-mp3.akacast.akamaistream.net/7/998/364916/v1/npr.akacast.akamaistream.net/nprdmp_live01_mp3" type="audio/mpeg" />
             Please <a href="http://browsehappy.com/" target="_blank">update your browser</a> to a modern browser in order to play audio
         </audio>
     </div>
