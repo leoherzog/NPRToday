@@ -1,7 +1,5 @@
 # NPR.Today
 
-Site by [Agent L Productions](http://agentl.productions)
-
 This site is basically just a playground for me to learn about Javascript, CSS, linux web hosting, and more.
 
 It is based off of [this stream schedule](http://www.npr.org/audiohelp/progstream.html). The clock on the site is an hourly clock that updates depending on the current program. If the line seems off, check your computer's local time.
@@ -17,4 +15,4 @@ This website, and all of it's material, is licensed as follows:
 
 * * *
 
-If you want to say thanks, turn Adblock off on the site or [buy me a coffee](https://paypal.me/leoherzog). Thanks!
+If you want to say thanks, turn Adblock off on the site or [![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/white_img.png)](https://buymeacoff.ee/leoherzog).
