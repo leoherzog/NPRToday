@@ -182,3 +182,6 @@ function updateMinuteHand() {
     clearTimeout(delayMinuteHand);
     delayMinuteHand = setTimeout(updateMinuteHand, 1000);
 }
+
+window.onload = function(){setbkg()};
+window.onload = function(){setbkg()};
