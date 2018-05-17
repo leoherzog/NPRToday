@@ -1,5 +1,5 @@
 //! moment-timezone.js
-//! version : 0.5.14
+//! version : 0.5.17
 //! Copyright (c) JS Foundation and other contributors
 //! license : MIT
 //! github.com/moment/moment-timezone
@@ -24,7 +24,7 @@
 	// 	return moment;
 	// }
 
-	var VERSION = "0.5.14",
+	var VERSION = "0.5.17",
 		zones = {},
 		links = {},
 		names = {},
@@ -215,7 +215,7 @@
 			abbr = abbr ? abbr.join('') : undefined;
 		} else {
 			// 17:56:31 CST
-			// 17:56:31 GMT+0800 (台北標準時間)
+			// 17:56:31 GMT+0800 (å°åŒ—æ¨™æº–æ™‚é–“)
 			abbr = timeString.match(/[A-Z]{3,5}/g);
 			abbr = abbr ? abbr[0] : undefined;
 		}
@@ -600,7 +600,7 @@
 	}
 
 	loadData({
-		"version": "2017c",
+		"version": "2018e",
 		"zones": [
 			"America/New_York|EST EDT|50 40|01010101010101010101010|1GI70 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Rd0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Rd0 1zb0 Op0 1zb0|21e6"
 		],
