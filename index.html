@@ -2,172 +2,170 @@
 <html lang="en-US">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
-    <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
-    <meta name="author" content="Leo Herzog | herzog.tech">
-
-    <title>NPR Today</title>
-
-    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npr-today/dhelpjcffnpoeobkjgklgcfdgjcahmae">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
-    <link rel="apple-touch-icon" href="img/nprtoday.png" />
-    <link rel="apple-touch-icon-precomposed" href="img/nprtoday.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="NPR Today">
-    <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#FF3300">
-
-    <script src="clockwork.js"></script>
-    <script src="moment.js"></script>
-    <script src="moment-timezone-with-data.js"></script>
-    <script async defer src="//buttons.github.io/buttons.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51976003-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-51976003-1');
-    </script>
-
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c281fc332f5d4392bc99a5e15c269971"}'></script>
-
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Yeseva+One|Francois+One");
-        body {
-            font-family: "Francois One", sans-serif;
-            margin: 0px;
-            background-color: white;
-        }
-
-        h1 {
-            font-size: 3em;
-            font-family: "Yeseva One", sans-serif;
-            color: #FF3300;
-        }
-
-        #logo {
-            position: fixed;
-            top: 4px;
-            left: 24px;
-            margin-top: -20px;
-        }
-
-        #subtitle {
-            margin-top: -40px;
-        }
-
-        #key {
-            font-size: .8em;
-            line-height: 90%;
-            text-align: left;
-            position: fixed;
-            top: 4px;
-            left: 24px;
-            margin-top: 86px;
-        }
-
-        #clock {
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #clockface {
-            position: absolute;
-            width: 50%;
-            top: 0px;
-            left: -6px;
-        }
-
-        #minuteHand {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            background: red;
-            width: 2px;
-            transform-origin: 0 0;
-        }
-
-        #stream {
-            position: fixed;
-            bottom: 8px;
-            right: 80px;
-        }
-
-        #about {
-            position: fixed;
-            bottom: 8px;
-            right: 16px;
-        }
-
-        #adsense {
-            position: fixed;
-            bottom: 6px;
-            left: 6px;
-            width: 240px;
-            height: 66px;
-        }
-
-        @media screen and (max-width: 719px) {
-            h1 {
-                font-size: 1.2em;
-            }
-            #logo {
-                position: fixed;
-                top: 2px;
-                margin-top: 0px;
-            }
-            #subtitle {
-                display: none;
-            }
-            #key {
-                display: none;
-            }
-            #adsense {
-                display: none;
-            }
-        }
-    </style>
-
+  
+  <meta charset="utf-8">
+  <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
+  <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
+  <meta name="author" content="Leo Herzog | herzog.tech">
+  
+  <title>NPR Today</title>
+  
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npr-today/dhelpjcffnpoeobkjgklgcfdgjcahmae">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+  <link rel="apple-touch-icon" href="img/nprtoday.png" />
+  <link rel="apple-touch-icon-precomposed" href="img/nprtoday.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NPR Today">
+  <link rel="shortcut icon" sizes="256x256" href="img/nprtoday.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#FF3300">
+  
+  <script src="clockwork.js"></script>
+  <script async defer src="//buttons.github.io/buttons.js"></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51976003-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-51976003-1');
+  </script>
+  
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c281fc332f5d4392bc99a5e15c269971"}'></script>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Yeseva+One|Francois+One");
+    body {
+      font-family: "Francois One", sans-serif;
+      margin: 0px;
+      background-color: white;
+    }
+    
+    h1 {
+      font-size: 3em;
+      font-family: "Yeseva One", sans-serif;
+      color: #FF3300;
+    }
+    
+    #logo {
+      position: fixed;
+      top: 4px;
+      left: 24px;
+      margin-top: -20px;
+    }
+    
+    #subtitle {
+      margin-top: -40px;
+    }
+    
+    #key {
+      font-size: .8em;
+      line-height: 90%;
+      text-align: left;
+      position: fixed;
+      top: 4px;
+      left: 24px;
+      margin-top: 86px;
+    }
+    
+    #clock {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #clockface {
+      position: absolute;
+      width: 50%;
+      top: 0px;
+      left: -6px;
+    }
+    
+    #minuteHand {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: red;
+      width: 2px;
+      transform-origin: 0 0;
+    }
+    
+    #stream {
+      position: fixed;
+      bottom: 8px;
+      right: 80px;
+    }
+    
+    #about {
+      position: fixed;
+      bottom: 8px;
+      right: 16px;
+    }
+    
+    #adsense {
+      position: fixed;
+      bottom: 6px;
+      left: 6px;
+      width: 240px;
+      height: 66px;
+    }
+    
+    @media screen and (max-width: 719px) {
+      h1 {
+        font-size: 1.2em;
+      }
+      #logo {
+        position: fixed;
+        top: 2px;
+        margin-top: 0px;
+      }
+      #subtitle {
+        display: none;
+      }
+      #key {
+        display: none;
+      }
+      #adsense {
+        display: none;
+      }
+    }
+  </style>
+  
 </head>
 
 <body>
-    <div id="clock">
-        <img id="clockface" />
-        <div id="minuteHand"></div>
-    </div>
-    <div id="logo">
-        <h1>NPR <span style="color:#3266CC;">Today</span></h1>
-        <p id="subtitle">An hourly NPR News clock</p>
-        <p id="key">
-            <span style="font-size:2em;color:#C0C0C2;">&#9632;</span> - Segment<br />
-            <span style="font-size:2em;color:#231F20;">&#9632;</span> - Newscast<br />
-            <span style="font-size:2em;color:#7EB3D2;">&#9632;</span> - Promo<br />
-            <span style="font-size:2em;color:#73A1AD;">&#9632;</span> - Music Bed<br />
-            <span style="font-size:2em;color:#EE2A2C;">&#9632;</span> - Funding Credit<br />
-        </p>
-    </div>
-    <div id="about">
-        <a class="github-button" href="https://github.com/leoherzog/nprtoday" data-icon="octicon-star" aria-label="Star leoherzog/nprtoday on GitHub">Star</a>
-    </div>
-    <div id="stream">
-        <audio autoplay controls>
-            <source src="https://npr-ice.streamguys1.com/live.mp3" type="audio/mpeg" />
-            Please <a href="https://browsehappy.com/" target="_blank">update your browser</a> to a modern browser in order to play audio
-        </audio>
-    </div>
-    <div id="adsense">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle" style="display:inline-block;width:234px;height:60px" data-ad-client="ca-pub-9544720367752359" data-ad-slot="5365959101"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
+  <div id="clock">
+    <img id="clockface" />
+    <div id="minuteHand"></div>
+  </div>
+  <div id="logo">
+    <h1>NPR <span style="color:#3266CC;">Today</span></h1>
+    <p id="subtitle">An hourly NPR News clock</p>
+    <p id="key">
+      <span style="font-size:2em;color:#C0C0C2;">&#9632;</span> - Segment<br />
+      <span style="font-size:2em;color:#231F20;">&#9632;</span> - Newscast<br />
+      <span style="font-size:2em;color:#7EB3D2;">&#9632;</span> - Promo<br />
+      <span style="font-size:2em;color:#73A1AD;">&#9632;</span> - Music Bed<br />
+      <span style="font-size:2em;color:#EE2A2C;">&#9632;</span> - Funding Credit<br />
+    </p>
+  </div>
+  <div id="about">
+    <a class="github-button" href="https://github.com/leoherzog/nprtoday" data-icon="octicon-star" aria-label="Star leoherzog/nprtoday on GitHub">Star</a>
+  </div>
+  <div id="stream">
+    <audio autoplay controls>
+      <source src="https://npr-ice.streamguys1.com/live.mp3" type="audio/mpeg" />
+      Please <a href="https://browsehappy.com/" target="_blank">update your browser</a> to a modern browser in order to play audio
+    </audio>
+  </div>
+  <div id="adsense">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle" style="display:inline-block;width:234px;height:60px" data-ad-client="ca-pub-9544720367752359" data-ad-slot="5365959101"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 </body>
 
 </html>
