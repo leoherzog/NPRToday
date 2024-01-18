@@ -6,13 +6,13 @@ It is based off of [this stream schedule](http://www.npr.org/audiohelp/progstrea
 
 Feel free to take a look at the source and adapt as you please.
 
-* * *
+---
 
-This website, and all of it's material, is licensed as follows:  
+This website, and all of it's material, is licensed as follows:
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)  
 <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">NPR.Today</span> is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-* * *
+---
 
-If you want to say thanks, turn Adblock off on the site or [![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/white_img.png)](https://buymeacoff.ee/leoherzog).
+If you want to say thanks, turn Adblock off on the site or [buy me a tea](https://herzog.tech/$).
