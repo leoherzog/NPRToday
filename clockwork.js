@@ -60,7 +60,7 @@ function setbkg() {
     // if it is
     var dayImg = [];
     // running each position on the array for this hour of the day
-    for (i in thisHour) {
+    for (let i in thisHour) {
       // getting the position
       var cfg = thisHour[i];
       // running for 1 to the number-of-days of this position
@@ -80,7 +80,7 @@ function setbkg() {
     img = dayImg[w]; // like this
   }
 
-  if (!img) img = 'i.imgur.com/wNOr5VU.png';
+  if (!img) img = '/img/regular-clock-circle-exclamation-bl-full.svg';
 
   var fakeImg = new Image();
   fakeImg.onload = function () {
@@ -137,7 +137,8 @@ function setbkg() {
   };
 
   // we need to create a fake image to get its size and adjust everything
-  fakeImg.src = 'https://npr.today/img/' + img;
+  var isAbsoluteImg = img.indexOf('http') === 0 || img.indexOf('/') === 0;
+  fakeImg.src = isAbsoluteImg ? img : 'https://npr.today/img/' + img;
 
   // we'll check again every 5 seconds
   clearTimeout(waitForIt);
@@ -169,12 +170,19 @@ function updateMinuteHand() {
   var radius = radMinute * m + radSecond * s;
 
   var hand = document.getElementById('minuteHand');
-  hand.style.WebkitTransform = "rotate(" + radius + "deg)";
-  hand.style.MozTransform = "rotate(" + radius + "deg)";
-  hand.style.transformOrigin = "rotate(" + radius + "deg)";
+  var rotation = "rotate(" + radius + "deg)";
+  hand.style.WebkitTransform = rotation;
+  hand.style.MozTransform = rotation;
+  hand.style.transform = rotation;
 
   clearTimeout(delayMinuteHand);
   delayMinuteHand = setTimeout(updateMinuteHand, 1000);
 }
 
-window.onload = function(){setbkg()};
+document.addEventListener('DOMContentLoaded', function () {
+  setbkg();
+  if (document.getElementById('player').paused) document.getElementById('player').play();
+  document.body.addEventListener('click', function () {
+    if (document.getElementById('player').paused) document.getElementById('player').play();
+  });
+});
