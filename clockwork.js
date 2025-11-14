@@ -48,7 +48,8 @@ function setbkg() {
   });
   var formattedTime = formatter.format(new Date());
   var [h, m, s] = formattedTime.split(':');
-  var thisHour = program[h];
+  var hourIndex = parseInt(h, 10);
+  var thisHour = program[hourIndex];
 
   var img = null;
 
