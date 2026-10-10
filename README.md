@@ -2,7 +2,7 @@
 
 This site is basically just a playground for me to learn about Javascript, CSS, linux web hosting, and more.
 
-It is based off of [this stream schedule](http://www.npr.org/audiohelp/progstream.html). The clock on the site is an hourly clock that updates depending on the current program. If the line seems off, check your computer's local time.
+It is based off of [this stream schedule](http://www.npr.org/audiohelp/progstream.html). The clock on the site is an hourly clock that updates depending on the current program. It follows Eastern time wherever you are, but the line is only as accurate as your device's clock.
 
 Feel free to take a look at the source and adapt as you please.
 

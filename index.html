@@ -2,15 +2,15 @@
 <html lang="en-US">
 
 <head>
-  
+
   <meta charset="utf-8">
   <meta name="description" content="A beautiful HTML5 streaming audio player for NPR's 24 hour news">
   <meta name="keywords" content="NPR, News, Radio, Public Radio, HTML5, Streaming">
   <meta name="author" content="Leo Herzog | herzog.tech">
-  
+
   <title>NPR Today</title>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <link rel="icon" href="img/favicon.png" sizes="64x64" type="image/png">
   <link rel="icon" href="img/nprtoday.png" sizes="256x256" type="image/png">
   <link rel="apple-touch-icon" href="img/nprtoday.png">
@@ -18,14 +18,14 @@
   <meta name="apple-mobile-web-app-title" content="NPR Today">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#FF3300">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Francois+One&family=Yeseva+One&display=swap">
-  
+
   <script defer src="clockwork.js"></script>
   <script async defer src="//buttons.github.io/buttons.js"></script>
-  
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K596EPJLDJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,132 +33,222 @@
     gtag('js', new Date());
     gtag('config', 'G-K596EPJLDJ');
   </script>
-  
+
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c281fc332f5d4392bc99a5e15c269971"}'></script>
-  
+
   <style>
+    /* Portrait first: header, clock and links stack in one column. Landscape splits them into side columns around the clock. Newer units sit after an older fallback so browsers that do not know them keep the line before. */
     body {
+      box-sizing: border-box;
+      min-height: 100vh;
+      min-height: 100dvh;
+      margin: 0;
+      padding: 8px 16px;
+      padding: max(8px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       font-family: "Francois One", sans-serif;
-      margin: 0px;
       background-color: white;
     }
-    
+
+    #side-left,
+    #side-right {
+      align-self: stretch;
+      text-align: center;
+    }
+
     h1 {
-      font-size: 3em;
+      margin: 0;
       font-family: "Yeseva One", sans-serif;
+      font-size: 2em;
+      line-height: 1.1;
       color: #FF3300;
     }
-    
-    #logo {
-      position: fixed;
-      top: 4px;
-      left: 24px;
-      margin-top: -20px;
+
+    h1 span {
+      color: #3266CC;
     }
-    
+
     #subtitle {
-      margin-top: -40px;
+      margin: 0;
     }
-    
+
     #key {
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
       font-size: .8em;
-      line-height: 90%;
-      text-align: left;
-      position: fixed;
-      top: 4px;
-      left: 24px;
-      margin-top: 86px;
     }
-    
+
+    #key li {
+      display: inline-block;
+      margin: 0 6px 4px;
+      white-space: nowrap;
+    }
+
+    .swatch {
+      display: inline-block;
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 4px;
+      vertical-align: -.3em;
+    }
+
+    /* Reserves room for everything else in the column so the page fits without scrolling. */
     #clock {
       position: relative;
-      margin-left: auto;
-      margin-right: auto;
+      flex: none;
+      width: 92vmin;
+      width: min(100vw - 32px, 100vh - 10rem);
+      width: min(100vw - 32px, 100dvh - 10rem);
+      margin: 8px 0;
     }
-    
-    #clockface {
+
+    #clock::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+
+    #clockface,
+    #hand {
       position: absolute;
-      width: 50%;
-      top: 0px;
-      left: -6px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
-    
-    #minuteHand {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      background: red;
-      width: 2px;
-      transform-origin: 0 0;
+
+    #clock.unknown #hand {
+      display: none;
     }
-    
-    #stream {
-      position: fixed;
-      bottom: 8px;
-      right: 80px;
+
+    #controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
-    
+
+    #player {
+      max-width: 100%;
+    }
+
     #about {
-      position: fixed;
-      bottom: 8px;
-      right: 16px;
+      margin: 0 8px;
     }
-    
+
     #adsense {
-      position: fixed;
-      bottom: 6px;
-      left: 6px;
       width: 240px;
       height: 66px;
     }
-    
-    @media screen and (max-width: 719px) {
+
+    @media (orientation: landscape) {
+      body {
+        flex-direction: row;
+        align-items: stretch;
+        height: 100vh;
+        height: 100dvh;
+        padding: 0;
+        padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      }
+      #side-left,
+      #side-right {
+        flex: 1 1 0%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      #side-left {
+        align-items: flex-start;
+        padding: 8px 16px 0 24px;
+        text-align: left;
+      }
+      #side-right {
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 16px 8px;
+        text-align: right;
+      }
       h1 {
-        font-size: 1.2em;
+        font-size: 3em;
       }
-      #logo {
+      #key li {
+        display: block;
+        margin: 0 0 4px;
+      }
+      #clock {
+        align-self: center;
+        width: 92vmin;
+        width: min(100vh - 16px, 100vw - 22rem);
+        width: min(100dvh - 16px, 100vw - 22rem);
+        margin: 0;
+      }
+      #controls {
+        justify-content: flex-end;
+      }
+      #adsense {
         position: fixed;
-        top: 2px;
-        margin-top: 0px;
+        bottom: 6px;
+        left: 6px;
       }
-      #subtitle {
-        display: none;
+    }
+
+    @media (orientation: landscape) and (max-height: 499px) {
+      h1 {
+        font-size: 2em;
       }
-      #key {
-        display: none;
-      }
+    }
+
+    @media (max-width: 719px), (max-height: 499px) {
       #adsense {
         display: none;
       }
     }
+
+    /* Portrait screens wide enough to show the ad at the bottom. */
+    @media (orientation: portrait) and (min-width: 720px) and (min-height: 500px) {
+      #clock {
+        width: min(100vw - 32px, 100vh - 10rem - 74px);
+        width: min(100vw - 32px, 100dvh - 10rem - 74px);
+      }
+    }
   </style>
-  
+
 </head>
 
 <body>
+  <div id="side-left">
+    <header id="logo">
+      <h1>NPR <span>Today</span></h1>
+      <p id="subtitle">An hourly NPR News clock</p>
+    </header>
+    <ul id="key">
+      <li><span class="swatch" style="background-color:#C0C0C2;"></span>Segment</li>
+      <li><span class="swatch" style="background-color:#231F20;"></span>Newscast</li>
+      <li><span class="swatch" style="background-color:#7EB3D2;"></span>Promo</li>
+      <li><span class="swatch" style="background-color:#73A1AD;"></span>Music Bed</li>
+      <li><span class="swatch" style="background-color:#EE2A2C;"></span>Funding Credit</li>
+    </ul>
+  </div>
   <div id="clock">
-    <img id="clockface" />
-    <div id="minuteHand"></div>
+    <img id="clockface" width="2600" height="2600">
+    <!-- Must share the viewBox of every clockface in img/, so the hand pivots on the clock's center. -->
+    <svg id="hand" viewBox="-1333.5 -1366.8 2600 2600" aria-hidden="true">
+      <line id="minuteHand" y2="-1007" stroke="red" stroke-width="8" />
+    </svg>
   </div>
-  <div id="logo">
-    <h1>NPR <span style="color:#3266CC;">Today</span></h1>
-    <p id="subtitle">An hourly NPR News clock</p>
-    <p id="key">
-      <span style="font-size:2em;color:#C0C0C2;">&#9632;</span> - Segment<br />
-      <span style="font-size:2em;color:#231F20;">&#9632;</span> - Newscast<br />
-      <span style="font-size:2em;color:#7EB3D2;">&#9632;</span> - Promo<br />
-      <span style="font-size:2em;color:#73A1AD;">&#9632;</span> - Music Bed<br />
-      <span style="font-size:2em;color:#EE2A2C;">&#9632;</span> - Funding Credit<br />
-    </p>
-  </div>
-  <div id="about">
-    <a class="github-button" href="https://github.com/leoherzog/nprtoday" data-icon="octicon-star" aria-label="Star leoherzog/nprtoday on GitHub">Star</a>
-  </div>
-  <div id="stream">
-    <audio id="player" autoplay controls>
-      <source src="https://npr-ice.streamguys1.com/live.mp3" type="audio/mpeg" />
-      Please <a href="https://browsehappy.com/" target="_blank">update your browser</a> to a modern browser in order to play audio
-    </audio>
+  <div id="side-right">
+    <div id="controls">
+      <audio id="player" src="https://npr-ice.streamguys1.com/live.mp3" autoplay controls>
+        Please <a href="https://browsehappy.com/" target="_blank">update your browser</a> to a modern browser in order to play audio
+      </audio>
+      <div id="about">
+        <a class="github-button" href="https://github.com/leoherzog/nprtoday" data-icon="octicon-star" aria-label="Star leoherzog/nprtoday on GitHub">Star</a>
+      </div>
+    </div>
   </div>
   <div id="adsense">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9544720367752359" crossorigin="anonymous"></script>
