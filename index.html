@@ -38,6 +38,10 @@
 
   <style>
     /* Portrait first: header, clock and links stack in one column. Landscape splits them into side columns around the clock. Newer units sit after an older fallback so browsers that do not know them keep the line before. */
+    [hidden] {
+      display: none !important;
+    }
+
     body {
       box-sizing: border-box;
       min-height: 100vh;
@@ -130,6 +134,38 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+    }
+
+    /* Centered on the clock's (0,0), which the clockface viewBox places at these fractions of its width and height. */
+    #toggle {
+      position: absolute;
+      left: calc(100% * 1333.5 / 2600);
+      top: calc(100% * 1366.8 / 2600);
+      width: 12%;
+      height: 12%;
+      min-width: 48px;
+      min-height: 48px;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: none;
+      cursor: pointer;
+    }
+
+    #toggle img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    #toggle .pause,
+    #toggle.playing .play {
+      display: none;
+    }
+
+    #toggle.playing .pause {
+      display: block;
     }
 
     #player {
@@ -235,10 +271,14 @@
   </div>
   <div id="clock">
     <img id="clockface" width="2600" height="2600">
-    <!-- Must share the viewBox of every clockface in img/, so the hand pivots on the clock's center. -->
+    <!-- Must share the viewBox of every clockface in img/. The hand pivot and the #toggle position both assume it. -->
     <svg id="hand" viewBox="-1333.5 -1366.8 2600 2600" aria-hidden="true">
       <line id="minuteHand" y2="-1007" stroke="red" stroke-width="8" />
     </svg>
+    <button id="toggle" type="button" aria-label="Play" hidden>
+      <img class="play" src="img/play.png" alt="">
+      <img class="pause" src="img/pause.png" alt="">
+    </button>
   </div>
   <div id="side-right">
     <div id="controls">

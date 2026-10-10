@@ -1,4 +1,4 @@
-/* Shows NPR's hourly clock for whatever the live stream is playing and turns its minute hand.
+/* Shows NPR's hourly clock for whatever the live stream is playing, turns its minute hand, and runs the stream player.
    Schedule source: http://www.npr.org/audiohelp/progstream.html */
 (function () {
   'use strict';
@@ -7,6 +7,7 @@
   // Seconds the stream runs behind real time. The hand and clockface follow the stream.
   var STREAM_DELAY = 10;
   var FALLBACK_FACE = 'img/regular-clock-circle-exclamation-bl-full.svg';
+  var ARTWORK = [{ src: 'img/nprtoday.png', sizes: '256x256', type: 'image/png' }];
 
   var CLOCKS = {
     me: {
@@ -64,6 +65,9 @@
   var clockBox = document.getElementById('clock');
   var face = document.getElementById('clockface');
   var hand = document.getElementById('minuteHand');
+  var player = document.getElementById('player');
+  var toggle = document.getElementById('toggle');
+  var hasMediaSession = 'mediaSession' in navigator && typeof MediaMetadata === 'function';
 
   var shownClock;
 
@@ -100,6 +104,14 @@
   function showProgram(clock) {
     face.src = clock ? clock.face : FALLBACK_FACE;
     clockBox.className = clock ? '' : 'unknown';
+    if (hasMediaSession) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: clock ? clock.title : 'NPR News',
+        artist: 'NPR',
+        album: 'NPR Today',
+        artwork: ARTWORK
+      });
+    }
   }
 
   function tick() {
@@ -114,4 +126,98 @@
   }
 
   tick();
+
+  // Player. Stopping drops the connection, so starting again always joins the live broadcast.
+
+  var wantPlaying = false;
+  var retryDelay = 2000;
+  var retryTimer = null;
+
+  function showState() {
+    toggle.className = wantPlaying ? 'playing' : '';
+    toggle.setAttribute('aria-label', wantPlaying ? 'Pause' : 'Play');
+    if (hasMediaSession) navigator.mediaSession.playbackState = wantPlaying ? 'playing' : 'paused';
+  }
+
+  function start() {
+    wantPlaying = true;
+    clearTimeout(retryTimer);
+    retryTimer = null;
+    player.src = STREAM_URL;
+    var promise = player.play();
+    // Browsers that predate the promise return undefined.
+    if (promise && promise.catch) {
+      promise.catch(function (error) {
+        // Autoplay was blocked. Drop the connection so it does not keep downloading.
+        if (error.name === 'NotAllowedError') stop();
+      });
+    }
+    showState();
+  }
+
+  function stop() {
+    wantPlaying = false;
+    clearTimeout(retryTimer);
+    retryTimer = null;
+    player.pause();
+    player.removeAttribute('src');
+    player.load();
+    showState();
+  }
+
+  function scheduleRetry() {
+    if (!wantPlaying || retryTimer) return;
+    retryTimer = setTimeout(start, retryDelay);
+    retryDelay = Math.min(retryDelay * 2, 30000);
+  }
+
+  // Until playback starts or the button is used, a click anywhere starts it, for browsers that block autoplay.
+  function onFirstClick() {
+    if (!wantPlaying) start();
+  }
+
+  function disarmFirstClick() {
+    document.removeEventListener('click', onFirstClick);
+  }
+
+  player.addEventListener('playing', function () {
+    clearTimeout(retryTimer);
+    retryTimer = null;
+    retryDelay = 2000;
+    disarmFirstClick();
+  });
+  player.addEventListener('progress', function () {
+    clearTimeout(retryTimer);
+    retryTimer = null;
+  });
+  player.addEventListener('error', scheduleRetry);
+  player.addEventListener('stalled', scheduleRetry);
+  player.addEventListener('ended', scheduleRetry);
+  // A pause from outside the page, such as unplugged headphones, counts as a stop. The stream ending or failing also pauses, and those cases retry instead.
+  player.addEventListener('pause', function () {
+    if (wantPlaying && !player.ended && !player.error) stop();
+  });
+
+  // Runs before the document listener, so removing it here keeps this click from restarting playback.
+  toggle.addEventListener('click', function () {
+    disarmFirstClick();
+    if (wantPlaying) stop();
+    else start();
+  });
+
+  if (hasMediaSession) {
+    var actions = { play: start, pause: stop, stop: stop };
+    for (var action in actions) {
+      // Browsers throw for actions they do not support.
+      try {
+        navigator.mediaSession.setActionHandler(action, actions[action]);
+      } catch (e) {}
+    }
+  }
+
+  player.removeAttribute('controls');
+  player.removeAttribute('autoplay');
+  toggle.hidden = false;
+  document.addEventListener('click', onFirstClick);
+  start();
 })();
