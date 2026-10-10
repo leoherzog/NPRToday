@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="2600" viewBox="-1333.5 -1366.8 2600 2600" text-rendering="geometricPrecision">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2600" height="2600" viewBox="-1333.5 -1366.8 2600 2600" text-rendering="geometricPrecision">
 <style>
 @font-face{font-family:Figtree;font-weight:750;src:url(data:font/woff2;base64,d09GMgABAAAAAAUoAA0AAAAACXAAAATZAAIAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGyAcKgZgAEoRCAqIRIcHATYCJAMwCxoABCAFhGgHIBu0B1GUTU6Q4GdC5qZCe6UQy9DKMETry03twvhl81wExX6/vfvqQNSQ/5DFQ8cjpdGsdErU0BgaQxRrkN/weL69Ltuh6cimckqk/lLypdJHpgdhNvN/nrMXANmM//xh03s3xuCtJ3YnfEJ3/+agtQbdLrC0MApwLQzTBBIuQEpRN/BLrAmdUMyeh18n0NXUBrG+WV4PXlCGAhwumwecHWXjYAgPzPnj5RTldRXyIhsBe93rxD5FiNU0g+FPx8+CleYZSvOLKqUnr6wk/nLp+DwISSQdgwSnr2m5ri6LsoahULBRunzxZZcUysN1DS0honIP1vc8c4ABEEdAPGOHauEUqSNzKGHc0u+fisaRwxCTMXDcABqj9zW0LnL/fsrbBw7AxX37QHv34sVEhfL2/v1U8n7Qvn1wv4V7NZR/t+wQwX1hg4KR+H/FjHJ++mIquXDqKPxvF63l9ROXjuoPHBeYxLfTFqW2PcMTm6lUCnDuMNSaOzHg3SS+pz+FRgnAfWBABX4YcpOWEpM2JdbdptaFyWRLf0Cr//+Aet1M9SSaOkp/pK+fvJ9K2qbWT+EtWQp5yZzp2YvJjTPBW7M2rfRc2eL1OnVzcOEy78apUDBtU0txJ2hXhEdDrXvxE/sNxKR9cJGYQUxkL6VunLiBXDg1PGsRLC1MX9xC7m7fuAcu7gLtbESDThh/t7X0r3C4vPhOawOBbvlAhOk5PoeD47frxUJEZvvJbN//GCzvM8I7suujr355HX9jKZBvPMfl8CzrdFT2/DR8lG8dY9x/cxt+GP2VnYiq3VVpnbkLc5b2Hm4wffXzIu27YCxbkOv0zibZEXuBIcUEYz7eoJK9LHNM5Y2szYwZ3PKs+BF7rdvTw1bbg6gZ12vNFSNIB2G0OpqjUtD6jrugXP374txbuXeMlBkAcCgCjBqMTrLHkXR0ESqZhk64vOq9caK3v/xw6NCfp2NDqpMtak2bxWuLpUxAyN0jtzaOz7kqkc+ciZitShei/+qNnnUNHe+Zcfx5HKq8gTn8Fn3Ejpn9KX3FaxOezKTTZz010WbR6TNhgMLzqAk3WM3tkx4oqlQ6XUNMVlEZlekbdCpF1YOJlg6rwcx+Hn9VeZsnvq9k8I5OGHOQi6DiJJefFIs7+dxOMPae7ukwnFUSbQiZOugeOs4rsF17jkjhpKpVH3ZgFh+UY1Y0zH4ygf5kdjqz4okWft5mLS7VEws7y8N2aLi8lDjUvi+QzrfXVekOeqb/OgRdhJdrdRDg7ffgIyOKM5SbUJUg+Da8+UiRTUDWSzVbm3jbaZKQmEicHiNThpmvGYHU+enByh68PzDBVWKFGwVtUxAI0VMVqyBRfhFwAyB5mDNRnrpu5Z1g2v61XdO4ySEh6WVpIQFBWQgFlIICol6QD8JNlbPSfNhWDdoTwnx6LO/H5GQFJaRlIPge75eVlGEgIxMQQt6b002qR0KMjI++GNErglTi4nwuv0zGL94umMnHCFpqqFo+ATlRXdLzDodk8nBCfI62OgB+R4EU+CDlqJAeOS4TROQQ9ELaMGeHz8t4iXKIKkmbJcFmuScQO3Av4YwQW0bISZtoR9frzbMqdMnrQmg94W5RwlXYOz2F9GFMDbo6ywDZaVdipi5/tkLnkJ7RKQLWAUhNVxEF)}
 @font-face{font-family:Hanken Grotesk;font-weight:800;src:url(data:font/woff2;base64,d09GMgABAAAAAAV4AA4AAAAACpgAAAUkAAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbg0wcKgZgAFQRCAqGUIUtATYCJAM4Cx4ABCAFhRoHIBvgCFFUUdZSfFnAG8pHfSBmotCoL7W4pYZgqtzgenv527oMdLHwHmCAEJ1n46FafnvdO3spB3WASpbCp+AQ6nusQwn0FS5J6mb4PP03KJ2RgcjINANTIe1ofpBHH2niv7/xe+5LQmu8SaSZLCqiQCRL/nzgiww5oLbIAsf2AviHmtuH3kyBHKBRRHRzs3n5g7R9/2Ou/psnkzqPK3V1Ia+Uv9v8ZnYDT6qdpEksRBqEwhIqr9PovE4m5OQ6YbObsYtY/UUKDABSCANCYIq8PmGOyHXmEQAmum7RKNC/8QIC6BPVIy1wAwQKVBSIOBFHj19++pceEfWYeONBxoI4sQQF6YXq1KQaQEWoHwANQAO5krfGFZugl0oN0sAM7vPUZ4J1VP3495qmUA79baybUA6bgU6Toy9F32TTB2YaEyJDSpNSO7S0YGeOhiiUJg6up18hla1rQCsk6+pVdAFT6unp1lxdV6ObQSofGjd3KQJD+gzARSrl9yuTPqbrS9kPmAT5VArgRes4cbCIhSI0nPt0DYoD560gj/uHBySNGHhl/BNWiCGxaWLpaH5McY8AA3qkYkWICHHIXaxARIiV2Knnn+kFAAjRaBgMgQXAGOA/sQOgAFIj5EEl0856hoK0jP68uX+g9I0UjycdSU+QvpLYECaLUjGUJNH//QnoPPa4US9BGDVFpPYuBEWaPueKs87XbU+flp89QzuS0b2nUNvjx6Dz5InbeuZM7kCNpFiCMpUCGc/pbwcNqEWhTDFL78XCvX0fRBWxb+Mx5iSHzknwS+NXXFKhNEi0MXXXtqtbV2fTwpJnsUr7qe69N72eLk23dVd3sDK4eSPiySAYT+uLYX1FOlVErD87T+6E1XvPOoYeS+ge51ScE/ZVsm9G+o++ffXWnX/s4sxEB9NwtSJXsh9eyud21zVQEs2hw5YaodmwMTxvToCC0obT0XmCQOey+9Fy54TGlCaHyLQAxDvZzY4eFmbHaA15I2lIBPe6xvhcLvB3b+vssbWlUzt7fnUOUWwT90wMdc2imoX6Ah7WBPU71DgsBdV0lbtPVE/pV71wsefEgOqlyyMKPsy36MNpuVNAkOeXUlt8yO72jJDQmjQrvl7ji3BB/w8A3mMsR4d0P2rDSuwxm6V5rWDtsXg961dGxi8s9eKBVb71FCrg7UabEb7uug/7tTTmJs8Haaf6WMW5eron0xyDwvmIIZIb7Ew2VDOIUVEVbosiGpiXTYy7vy9OuIE9H9a41DzwBLW5pbH5TPems0pQrYsLrhbktNV9vK21GYBgNC/Bd2PNbAWfbz1Ncw9vm4E0fO+e/9fWzmt5ExtdEgSvrJQ/RKc9QCimD+WXs9pKmMkf4o2abrn8+UdOHEl5lAHWTUE0K4xM9bmNOPBXWI6IbRKKm1pPiIlJBvADwhdOXPSlIX98gzEKeE9DrspIEAGhUnnYmFgKwJw4cOIIhmKhg4XDEbjoCLAweQQK0OXjgsWTwCGqytWIQgVYBPLkg1moX1VAKJ8Xe/aY2NijClHYoRLgs8eHy0NleDVgcqF8FljJJYTbYm7EcoEcooQazYMLVL+KJhEdUyEeXN42ib1UVygBgmFJbWBQMWajg5mHbeNkL8tHRwMrRKChywMrOLDPJokQDRZHiI7QXxmtAzaEaXTlY4OjMEd2tdgFLD95ckmMK7KJvZkuCh6fLz5cRHDyLkQCcXgBL/BVdOWjXj4LFVhddvI1ye7yTgaTvTihoqVVMUWkOuwAAAA=)}
@@ -14,56 +14,56 @@
 <line id="l" y2="-1068.8"/>
 <path id="h" d="M0 0l-14.2-14.2h-12.3l14.2 14.2-14.2 14.2h12.3z"/>
 </defs>
-<circle cx="2.5" cy="4.5" r="948" fill="none" stroke="#D1D2D4" stroke-width="45.7" pathLength="3600" stroke-dasharray="6.5 53.5" stroke-dashoffset="2.8"/>
+<circle cx="2.5" cy="4.5" r="948" fill="none" stroke="#D1D2D4" stroke-width="45.7" stroke-dasharray="10.75 88.52" stroke-dashoffset="4.63"/>
 <circle r="938.6" fill="#D1D2D4"/>
 <g fill="none" stroke-width="320" transform="rotate(-90)">
 <g stroke="#7EB3D2">
-<circle r="778.6" pathLength="3600" stroke-dasharray="0 5 55 3600"/>
-<circle r="778.6" pathLength="3600" stroke-dasharray="0 1740 90 3600"/>
+<circle r="778.6" stroke-dasharray="0 6.79 74.74 4892.09"/>
+<circle r="778.6" stroke-dasharray="0 2364.51 122.3 4892.09"/>
 </g>
 <g stroke="#231F20">
-<circle r="778.8" pathLength="3600" stroke-dasharray="0 60 280 3600"/>
-<circle r="779.1" pathLength="3600" stroke-dasharray="0 1830 210 3600"/>
+<circle r="778.8" stroke-dasharray="0 81.56 380.59 4893.34"/>
+<circle r="779.1" stroke-dasharray="0 2488.41 285.56 4895.23"/>
 </g>
 <g stroke="#73A1AD">
-<circle r="778.6" pathLength="3600" stroke-dasharray="0 360 30 3600"/>
-<circle r="778.6" pathLength="3600" stroke-dasharray="0 1080 120 3600"/>
-<circle r="778.6" pathLength="3600" stroke-dasharray="0 1770 30 3600"/>
-<circle r="777" pathLength="3600" stroke-dasharray="0 2040 60 3600"/>
-<circle r="778.6" pathLength="3600" stroke-dasharray="0 2880 120 3600"/>
-<circle r="778.6" pathLength="3600" stroke-dasharray="0 3540 55 3600"/>
+<circle r="778.6" stroke-dasharray="0 489.21 40.77 4892.09"/>
+<circle r="778.6" stroke-dasharray="0 1467.63 163.07 4892.09"/>
+<circle r="778.6" stroke-dasharray="0 2405.28 40.77 4892.09"/>
+<circle r="777" stroke-dasharray="0 2766.49 81.37 4882.03"/>
+<circle r="778.6" stroke-dasharray="0 3913.67 163.07 4892.09"/>
+<circle r="778.6" stroke-dasharray="0 4810.55 74.74 4892.09"/>
 </g>
 </g>
 <circle cx="3.5" cy="8.7" r="634" fill="#fff"/>
 <g fill="none" stroke="#EE2A2C" stroke-width="400" transform="rotate(-90)">
-<circle r="790.7" pathLength="3600" stroke-dasharray="0 340 20 3600"/>
-<circle r="738.4" pathLength="3600" stroke-dasharray="0 1200 35 3600"/>
-<circle r="737.9" pathLength="3600" stroke-dasharray="0 2100 35 3600"/>
-<circle r="795.1" pathLength="3600" stroke-dasharray="0 3490 50 3600"/>
+<circle r="790.7" stroke-dasharray="0 469.21 27.6 4968.11"/>
+<circle r="738.4" stroke-dasharray="0 1546.5 45.11 4639.5"/>
+<circle r="737.9" stroke-dasharray="0 2704.54 45.08 4636.36"/>
+<circle r="795.1" stroke-dasharray="0 4843.11 69.39 4995.76"/>
 </g>
 <g stroke="#818285" stroke-width="4.6">
-<use href="#l" transform="rotate(0.5)"/>
-<use href="#l" transform="rotate(6)"/>
-<use href="#l" transform="rotate(24)"/>
-<use href="#l" transform="rotate(34)"/>
-<use href="#l" transform="rotate(36)"/>
-<use href="#l" transform="rotate(39)"/>
-<use href="#l" transform="rotate(108)"/>
-<use href="#l" transform="rotate(120)"/>
-<use href="#l" transform="rotate(123.5)"/>
-<use href="#l" transform="rotate(174)"/>
-<use href="#l" transform="rotate(177)"/>
-<use href="#l" transform="rotate(180)"/>
-<use href="#l" transform="rotate(183)"/>
-<use href="#l" transform="rotate(195)"/>
-<use href="#l" transform="rotate(204)"/>
-<use href="#l" transform="rotate(210)"/>
-<use href="#l" transform="rotate(213.5)"/>
-<use href="#l" transform="rotate(264)"/>
-<use href="#l" transform="rotate(288)"/>
-<use href="#l" transform="rotate(300)"/>
-<use href="#l" transform="rotate(349)"/>
-<use href="#l" transform="rotate(354)"/>
+<use href="#l" xlink:href="#l" transform="rotate(0.5)"/>
+<use href="#l" xlink:href="#l" transform="rotate(6)"/>
+<use href="#l" xlink:href="#l" transform="rotate(24)"/>
+<use href="#l" xlink:href="#l" transform="rotate(34)"/>
+<use href="#l" xlink:href="#l" transform="rotate(36)"/>
+<use href="#l" xlink:href="#l" transform="rotate(39)"/>
+<use href="#l" xlink:href="#l" transform="rotate(108)"/>
+<use href="#l" xlink:href="#l" transform="rotate(120)"/>
+<use href="#l" xlink:href="#l" transform="rotate(123.5)"/>
+<use href="#l" xlink:href="#l" transform="rotate(174)"/>
+<use href="#l" xlink:href="#l" transform="rotate(177)"/>
+<use href="#l" xlink:href="#l" transform="rotate(180)"/>
+<use href="#l" xlink:href="#l" transform="rotate(183)"/>
+<use href="#l" xlink:href="#l" transform="rotate(195)"/>
+<use href="#l" xlink:href="#l" transform="rotate(204)"/>
+<use href="#l" xlink:href="#l" transform="rotate(210)"/>
+<use href="#l" xlink:href="#l" transform="rotate(213.5)"/>
+<use href="#l" xlink:href="#l" transform="rotate(264)"/>
+<use href="#l" xlink:href="#l" transform="rotate(288)"/>
+<use href="#l" xlink:href="#l" transform="rotate(300)"/>
+<use href="#l" xlink:href="#l" transform="rotate(349)"/>
+<use href="#l" xlink:href="#l" transform="rotate(354)"/>
 </g>
 <circle cx="3.5" cy="8.7" r="613.3" fill="#fff"/>
 <g fill="none" stroke="#7EB3D2" stroke-width="8.4">
@@ -71,13 +71,13 @@
 <path stroke-width="4.3" d="M-216.8 1021.3v27.2M299.9 1021.3v27.2"/>
 </g>
 <g fill="none" stroke="#EE2A2C" stroke-width="8.4">
-<circle r="951.4" pathLength="3600" stroke-dasharray="0 249 139 3600" transform="translate(12.5 -35.5) rotate(-90)"/>
-<circle r="894.6" pathLength="3600" stroke-dasharray="0 3500 100 3600" transform="translate(-18.9 -94.3) rotate(-90)"/>
+<circle r="951.4" stroke-dasharray="0 413.47 230.81 5977.82" transform="translate(12.5 -35.5) rotate(-90)"/>
+<circle r="894.6" stroke-dasharray="0 5464.8 156.14 5620.94" transform="translate(-18.9 -94.3) rotate(-90)"/>
 </g>
 <g fill="#EE2A2C">
-<use href="#h" transform="translate(406.3 -901.2) rotate(-154.2)"/>
-<use href="#h" transform="translate(618.1 -769.4) rotate(38.2)"/>
-<use href="#h" transform="translate(-9.4 -989.2) rotate(-0.6) scale(0.8)"/>
+<use href="#h" xlink:href="#h" transform="translate(406.3 -901.2) rotate(-154.2)"/>
+<use href="#h" xlink:href="#h" transform="translate(618.1 -769.4) rotate(38.2)"/>
+<use href="#h" xlink:href="#h" transform="translate(-9.4 -989.2) rotate(-0.6) scale(0.8)"/>
 </g>
 <rect x="-15.9" y="-940" width="16" height="320" fill="#fff"/>
 <g fill="#231F20">

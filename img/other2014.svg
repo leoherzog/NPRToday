@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="2600" viewBox="-1335.1 -1368.6 2600 2600" text-rendering="geometricPrecision">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2600" height="2600" viewBox="-1333.5 -1366.8 2600 2600" text-rendering="geometricPrecision">
 <style>
 @font-face{font-family:Figtree;font-weight:750;src:url(data:font/woff2;base64,d09GMgABAAAAAAVEAA0AAAAACZAAAAT1AAIAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGyAcKgZgAEQRCAqIaIcbATYCJAM0CxwABCAFhGgHIBvGBxGVo1ER/CGB0yEssTD9R7Bg3ajGFYrhOE9sdlefsF6ljmGdet4/B0//c5935uUvBZYIFWABUVcvqeRUV0giRYCKSf20GNo8sMsm4F5kskqlJ3MgjTcAhs15Tw8ZaTeVDMzVDY6sLMGwWBOb+P4HmF8fnMPfz3QRyU24CU/o763eIqkqKBJsuuFogLtoPDw9gRO+A6TTyi3wSiwz5Cy38GJN878OATxicACQ3n59c4jCAggLDqvV3uYV4YGQwKMx9I9bWqnvQqA++nxg0vYSWUqD8DNTFbT/dPwsnCaPDjP5PwJz7yUrll96fx4GUKgkSRiEbVGXjyIKHfLtdIQNmLqr5o67iR4KZ4lFFneDzng6AWQ9yCsAsHq/Igub9hYju6lxcSiOegSjIJ8IJ8tD5cPXoFb4l5cyenVlBxcXjNw/nxsgJRm9vIzx72fkwYUdOnwuKR17R5U2pu2Q6ZzXtTQ0jg/O4vvT/dSWbSFq9Wd3z1MTQOBMwbyKgZkWnh2P7OLHCLAeOaqNd3u0r4jvccWRdbbaxLDWNmHiNfN6dhrTqatpuhm0I8CZvf1K4oJRhAS5g/ZHMrN7L/F95X7zPq65s5Dmxp4cnc3dHmbk4A6yyRGX9Sc+0Dt6bqt0Lra5SZ3b/ZC/d8cuewwjd/x4cNR0Hz9xKTuv5wIJrIasutnn8e+faI4/3e8/OIMkzwzO2uWerq+eIcEJjNy2Rp3q9txxe91WX9/xONXewgrdyORTkeHwUFPj8FSV4edFJHZPErvHfxtOasoglUt2aX2CZeI81G9m4NBQ01pwVjN0q6Wg9tjAWZ3jFtU0papW/hKaRqHSCi4q6rrut9+u0roZqTTItJXXc6prj+ay+6lGsQiq8NDmbInXxgip9XNRmYbRktj9Dca+ngE3dglVb2EFSxkpBQPKXDUrOSU1W39BWDymGSW2ekcjkiNS5dCGgGJbdB2LiQpTLjt9LpPwjLDAgDDj809k8aWUZJGR1Q2qkBoH20lIOihqKweEyEOFrblKRMmaIULDkLlQPShA2Ujah6lB2/9pm8igNfSIM9dM/brs8VSU8VNVUfAMkTGIZ/x9gEwjfyb5ESamYYTlTuPU7M+aM40623KLsLylrJKCY8/31l1cWtoiQMjA0F9IxkJaXNTo+w47KckqsJ+3jBP7VFr51oi57pFxrTxh/mBO7mB+fmduTmfIvNiVmdHVjcRSPsz9nbtEem0e5bfcvBb9WllJxldNRdEDrY86VTH6G8Dfh9qRpd+JB9lY2eYRFh120rWPlJ2tscDs+wRQxr8Mb5t3Iur6HcW8A55vbfYG4M3nx/+Fr+kViEABEPiJOPU8RSIHeE/NoEu8bbX6kCfdUKVapKoQBRpPCoJly+5CFSZX3ShFfyCHTyBt9COASwsGAGF8KkQ3BrGigR2AZEIaO2SKx2mZKwXc/FqPFvlAtmnFjixKHmo1Wi30kXi0o/Kew2P4APWmwjPP+5e+J5mOiwoRkR5asH9Ur4syea9Pa8zU67w+q3IqUjIM/jSuC+LlRSMf+/e7jRcv+hpxbPtlt/ebhkX4BmjBEpJ8HuU1mcmxrhf5CM2hHa1lCx+l/3hBd8tnSrB4iYSuWH5R/K7M5lGztgR3dL7eYCpDAoLAdfxUI2zhvUMooPcvn+i8N0J32mYatQndDJ2l9ox2IXp70jNNWg==)}
 @font-face{font-family:Hanken Grotesk;font-weight:800;src:url(data:font/woff2;base64,d09GMgABAAAAAAVEAA4AAAAAClAAAATyAAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgzYcKgZgAFQRCAqGJIURATYCJAM0CxwABCAFhRoHIBuqCFFUUWZTfJFgbLNg7SEmtkS2haumhCGhjuiGcUdrrt/nIh5a+83b2/tiqEaSWbJkoTZKotHIXrnBNi21CcwlExWmCkwUKg4d0BPtdmKmX+f57y923vs7voALO4HnO2GAWVREOzEmlNZqeqHm9qE3UyAHaBQU3dxsXjXkXq2p/Q07YGFehYyNjdAs5Ce8ASAVLqCvQn8TIQskVBWTcCRrVISucBpIVbY7Kssoal+SYAIoIsYiWOVgJDaJHneOAZB4u9TgIOBJCQwIIDZQbEsHBBU6FKQgKQbevH38U0Uubvvp8iAlpxSyNYTO6ZLOAIaEdvYTgDtY91nASwSCFFL6nTV0TwxrzMzPfCUXihfNx6jprIpRaZlxUqon1yg/b4YgNhICSYJFcR2aUbDxTAFziCIq+kYqEsaQ+4wMNFoQfVXvmbCRxWLgnAy2ANSgh+tN4MnYDqQLmyu6CbUTGkhG2bsV8NLYSW4iK1JuGAc+bsX14KQFMT7+3yLOJAH8wHKUQ9gnQUGDZRLBMqk7wMRAUe0rUakekYh9mEp1mhIqJ3M0B7NfAEAkaA5MwSZgAfBJrgCogKIRRUTRB4TBcLSxDRii0nzESV8djbdxQ/WoFiHtcDmJozJ0yj1guZt5SccQkhol6r+OICLtP2Gp4ypq8v378QcP0F0JfPd9ZPLdu8By757NPUghWpxTeAczIJP476eIMCitxJSSgERU4kmc3TN3SeMdLyTjZzdsTG1D2hGxRAou7EhuP7+CGtmy6p4JHGknL2ff345g+3XB3o2NbZcq743ijMYgIkeA1KGjRRJUbLl3LUjeeNDSvCvzO6grqZYmjLJ7MvQ//o58Bwr+0w7uakoMq3AflEbkU0ON+hkDY+mmCCRuosUUviAErolggOCkWNCBr2EYfHV6MUXfalMIPT6xqr0Qy2lJj1eWl8erRDMHa8cquUeHUKv7QMEb248f2Lz+yM7d+QOJ1drQjC4ST+uWh5flAfEZh8p7zHE7dXrmobluZ84uQRlhTU65oD1TsQyxZrZ8Yi6RkaAqLaswMpGXvSBVQSn/A6Dgd1KTlNiRLx+7se5A7Po13iU+ixv8Y14Hh7yM8m8A0biZZkdqSvC2yrwMv9tzvD1XLztZ7NOWG12flpXRokgqrjBiQVhfSQoR5B5Y6+pm2iHGPMns2NqMgjyKSbcPnpxvW84tt25AxTxh4rgJx2ZsS3Et7j9PpdyLk7fPODh50gQAgmbgry1De49j7t+gkXyE933PBuDjePsHbbovlMvoKSD8pFj5IgLtACUfO61fTnt7nFcrgMauvcJt2RO4v4JfSNSod1PMq8vZ9mw3JQUEU4ckIPLTWg8kMtkCXpF0HDtNFzPf9LSCA97SzGUHK8YyGYqjpaYhgJIlSpYEwmkoQRUoDD0lBlSOwxIo8fSgBg26oHyS18WYCTRYHB4USUMgMOFlS5BATUugYUaLJ8cySmBE4WI0VECNZkUm0GzBOI56OVEbfN1SQwg4lCIsA4UmSmpmBhQOTkOLB5VhMQRQM5aKYDAmV4JoaATliyEfj1WAzBg1VYkDCRc2bLNKNaB6JkrM9PNrpoHYIDkF8soJdqAk8RXXA8y9uHdLt6MMQtEyoNAMlKDBl+tEnLqIaSRWFmSDT1HkyR8/byIocTy+aBD/eKiGNqNemZqhSYncVDccAA==)}
@@ -13,58 +13,58 @@
 <line id="l" y2="-1063.3"/>
 <path id="h" d="M0 0l-11.3-11.3h-9.8l11.3 11.3-11.3 11.3h9.8z"/>
 </defs>
-<circle cx="2.4" cy="4.6" r="950" fill="none" stroke="#D1D2D4" stroke-width="44.6" pathLength="3600" stroke-dasharray="6.4 53.6" stroke-dashoffset="2.8"/>
+<circle cx="2.4" cy="4.6" r="950" fill="none" stroke="#D1D2D4" stroke-width="44.6" stroke-dasharray="10.61 88.87" stroke-dashoffset="4.64"/>
 <circle r="940" fill="#D1D2D4"/>
 <g fill="none" stroke-width="320" transform="rotate(-90)">
-<circle r="780" pathLength="3600" stroke="#7EB3D2" stroke-dasharray="60 3600"/>
+<circle r="780" stroke="#7EB3D2" stroke-dasharray="81.68 4900.88"/>
 <g stroke="#231F20">
-<circle r="780.2" pathLength="3600" stroke-dasharray="0 60 280 3600"/>
-<circle r="780" pathLength="3600" stroke-dasharray="0 1140 60 3600"/>
-<circle r="780" pathLength="3600" stroke-dasharray="0 2400 60 3600"/>
+<circle r="780.2" stroke-dasharray="0 81.7 381.28 4902.14"/>
+<circle r="780" stroke-dasharray="0 1551.95 81.68 4900.88"/>
+<circle r="780" stroke-dasharray="0 3267.26 81.68 4900.88"/>
 </g>
 <g stroke="#73A1AD">
-<circle r="780" pathLength="3600" stroke-dasharray="0 360 30 3600"/>
-<circle r="780" pathLength="3600" stroke-dasharray="0 1080 60 3600"/>
-<circle r="780" pathLength="3600" stroke-dasharray="0 2340 60 3600"/>
-<circle r="780" pathLength="3600" stroke-dasharray="0 3510 90 3600"/>
+<circle r="780" stroke-dasharray="0 490.09 40.84 4900.88"/>
+<circle r="780" stroke-dasharray="0 1470.27 81.68 4900.88"/>
+<circle r="780" stroke-dasharray="0 3185.57 81.68 4900.88"/>
+<circle r="780" stroke-dasharray="0 4778.36 122.52 4900.88"/>
 </g>
-<circle r="780" pathLength="3600" stroke="#EE2A2C" stroke-dasharray="0 3475 35 3600"/>
+<circle r="780" stroke="#EE2A2C" stroke-dasharray="0 4730.71 47.65 4900.88"/>
 </g>
 <circle cx="3.5" cy="8.7" r="635" fill="#fff"/>
 <g fill="none" stroke="#EE2A2C" stroke-width="400" transform="rotate(-90)">
-<circle r="794.6" pathLength="3600" stroke-dasharray="0 340 20 3600"/>
-<circle r="795.2" pathLength="3600" stroke-dasharray="0 1200 35 3600"/>
-<circle r="792.1" pathLength="3600" stroke-dasharray="0 2460 35 3600"/>
+<circle r="794.6" stroke-dasharray="0 471.53 27.74 4992.62"/>
+<circle r="795.2" stroke-dasharray="0 1665.46 48.58 4996.39"/>
+<circle r="792.1" stroke-dasharray="0 3400.89 48.39 4976.91"/>
 </g>
 <g stroke="#818285" stroke-width="4.6">
-<use href="#l" transform="rotate(6)"/>
-<use href="#l" transform="rotate(24)"/>
-<use href="#l" transform="rotate(34)"/>
-<use href="#l" transform="rotate(36)"/>
-<use href="#l" transform="rotate(39)"/>
-<use href="#l" transform="rotate(108)"/>
-<use href="#l" transform="rotate(114)"/>
-<use href="#l" transform="rotate(120)"/>
-<use href="#l" transform="rotate(123.5)"/>
-<use href="#l" transform="rotate(210)"/>
-<use href="#l" transform="rotate(234)"/>
-<use href="#l" transform="rotate(240)"/>
-<use href="#l" transform="rotate(246)"/>
-<use href="#l" transform="rotate(249.5)"/>
-<use href="#l" transform="rotate(347.5)"/>
-<use href="#l" transform="rotate(351)"/>
+<use href="#l" xlink:href="#l" transform="rotate(6)"/>
+<use href="#l" xlink:href="#l" transform="rotate(24)"/>
+<use href="#l" xlink:href="#l" transform="rotate(34)"/>
+<use href="#l" xlink:href="#l" transform="rotate(36)"/>
+<use href="#l" xlink:href="#l" transform="rotate(39)"/>
+<use href="#l" xlink:href="#l" transform="rotate(108)"/>
+<use href="#l" xlink:href="#l" transform="rotate(114)"/>
+<use href="#l" xlink:href="#l" transform="rotate(120)"/>
+<use href="#l" xlink:href="#l" transform="rotate(123.5)"/>
+<use href="#l" xlink:href="#l" transform="rotate(210)"/>
+<use href="#l" xlink:href="#l" transform="rotate(234)"/>
+<use href="#l" xlink:href="#l" transform="rotate(240)"/>
+<use href="#l" xlink:href="#l" transform="rotate(246)"/>
+<use href="#l" xlink:href="#l" transform="rotate(249.5)"/>
+<use href="#l" xlink:href="#l" transform="rotate(347.5)"/>
+<use href="#l" xlink:href="#l" transform="rotate(351)"/>
 </g>
 <circle cx="3.5" cy="8.7" r="614.3" fill="#fff"/>
 <g fill="none" stroke="#EE2A2C" stroke-width="8.5">
-<circle r="990.5" pathLength="3600" stroke-dasharray="0 250 131 3600" transform="rotate(-90)"/>
-<circle r="990.9" pathLength="3600" stroke-dasharray="0 1089 126 3600" transform="rotate(-90)"/>
-<circle r="1000.4" pathLength="3600" stroke-dasharray="0 2113 362 3600" transform="translate(10.1 -8.1) rotate(-90)"/>
+<circle r="990.5" stroke-dasharray="0 432.19 226.47 6223.5" transform="rotate(-90)"/>
+<circle r="990.9" stroke-dasharray="0 1883.37 217.91 6226.01" transform="rotate(-90)"/>
+<circle r="1000.4" stroke-dasharray="0 3689.36 632.06 6285.7" transform="translate(10.1 -8.1) rotate(-90)"/>
 </g>
 <g fill="#EE2A2C">
-<use href="#h" transform="translate(411.5 -900.6) rotate(-154.5)"/>
-<use href="#h" transform="translate(616.1 -775.5) rotate(37.6)"/>
-<use href="#h" transform="translate(940.1 313.7) rotate(-71.1)"/>
-<use href="#h" transform="translate(-503.6 850.2) rotate(31.9)"/>
+<use href="#h" xlink:href="#h" transform="translate(411.5 -900.6) rotate(-154.5)"/>
+<use href="#h" xlink:href="#h" transform="translate(616.1 -775.5) rotate(37.6)"/>
+<use href="#h" xlink:href="#h" transform="translate(940.1 313.7) rotate(-71.1)"/>
+<use href="#h" xlink:href="#h" transform="translate(-503.6 850.2) rotate(31.9)"/>
 </g>
 <rect x="-15.9" y="-950" width="16" height="340" fill="#fff"/>
 <g fill="#231F20">
