@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="2600" viewBox="-1333.5 -1366.8 2600 2600" text-rendering="geometricPrecision">
+<style>
+@font-face{font-family:Figtree;font-weight:750;src:url(data:font/woff2;base64,d09GMgABAAAAAAUoAA0AAAAACXAAAATZAAIAgwAAAAAAAAAAAAAAAAAAAAAAAAAAGyAcKgZgAEoRCAqIRIcHATYCJAMwCxoABCAFhGgHIBu0B1GUTU6Q4GdC5qZCe6UQy9DKMETry03twvhl81wExX6/vfvqQNSQ/5DFQ8cjpdGsdErU0BgaQxRrkN/weL69Ltuh6cimckqk/lLypdJHpgdhNvN/nrMXANmM//xh03s3xuCtJ3YnfEJ3/+agtQbdLrC0MApwLQzTBBIuQEpRN/BLrAmdUMyeh18n0NXUBrG+WV4PXlCGAhwumwecHWXjYAgPzPnj5RTldRXyIhsBe93rxD5FiNU0g+FPx8+CleYZSvOLKqUnr6wk/nLp+DwISSQdgwSnr2m5ri6LsoahULBRunzxZZcUysN1DS0honIP1vc8c4ABEEdAPGOHauEUqSNzKGHc0u+fisaRwxCTMXDcABqj9zW0LnL/fsrbBw7AxX37QHv34sVEhfL2/v1U8n7Qvn1wv4V7NZR/t+wQwX1hg4KR+H/FjHJ++mIquXDqKPxvF63l9ROXjuoPHBeYxLfTFqW2PcMTm6lUCnDuMNSaOzHg3SS+pz+FRgnAfWBABX4YcpOWEpM2JdbdptaFyWRLf0Cr//+Aet1M9SSaOkp/pK+fvJ9K2qbWT+EtWQp5yZzp2YvJjTPBW7M2rfRc2eL1OnVzcOEy78apUDBtU0txJ2hXhEdDrXvxE/sNxKR9cJGYQUxkL6VunLiBXDg1PGsRLC1MX9xC7m7fuAcu7gLtbESDThh/t7X0r3C4vPhOawOBbvlAhOk5PoeD47frxUJEZvvJbN//GCzvM8I7suujr355HX9jKZBvPMfl8CzrdFT2/DR8lG8dY9x/cxt+GP2VnYiq3VVpnbkLc5b2Hm4wffXzIu27YCxbkOv0zibZEXuBIcUEYz7eoJK9LHNM5Y2szYwZ3PKs+BF7rdvTw1bbg6gZ12vNFSNIB2G0OpqjUtD6jrugXP374txbuXeMlBkAcCgCjBqMTrLHkXR0ESqZhk64vOq9caK3v/xw6NCfp2NDqpMtak2bxWuLpUxAyN0jtzaOz7kqkc+ciZitShei/+qNnnUNHe+Zcfx5HKq8gTn8Fn3Ejpn9KX3FaxOezKTTZz010WbR6TNhgMLzqAk3WM3tkx4oqlQ6XUNMVlEZlekbdCpF1YOJlg6rwcx+Hn9VeZsnvq9k8I5OGHOQi6DiJJefFIs7+dxOMPae7ukwnFUSbQiZOugeOs4rsF17jkjhpKpVH3ZgFh+UY1Y0zH4ygf5kdjqz4okWft5mLS7VEws7y8N2aLi8lDjUvi+QzrfXVekOeqb/OgRdhJdrdRDg7ffgIyOKM5SbUJUg+Da8+UiRTUDWSzVbm3jbaZKQmEicHiNThpmvGYHU+enByh68PzDBVWKFGwVtUxAI0VMVqyBRfhFwAyB5mDNRnrpu5Z1g2v61XdO4ySEh6WVpIQFBWQgFlIICol6QD8JNlbPSfNhWDdoTwnx6LO/H5GQFJaRlIPge75eVlGEgIxMQQt6b002qR0KMjI++GNErglTi4nwuv0zGL94umMnHCFpqqFo+ATlRXdLzDodk8nBCfI62OgB+R4EU+CDlqJAeOS4TROQQ9ELaMGeHz8t4iXKIKkmbJcFmuScQO3Av4YwQW0bISZtoR9frzbMqdMnrQmg94W5RwlXYOz2F9GFMDbo6ywDZaVdipi5/tkLnkJ7RKQLWAUhNVxEF)}
+@font-face{font-family:Hanken Grotesk;font-weight:800;src:url(data:font/woff2;base64,d09GMgABAAAAAAV4AA4AAAAACpgAAAUkAAMDVAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbg0wcKgZgAFQRCAqGUIUtATYCJAM4Cx4ABCAFhRoHIBvgCFFUUdZSfFnAG8pHfSBmotCoL7W4pYZgqtzgenv527oMdLHwHmCAEJ1n46FafnvdO3spB3WASpbCp+AQ6nusQwn0FS5J6mb4PP03KJ2RgcjINANTIe1ofpBHH2niv7/xe+5LQmu8SaSZLCqiQCRL/nzgiww5oLbIAsf2AviHmtuH3kyBHKBRRHRzs3n5g7R9/2Ou/psnkzqPK3V1Ia+Uv9v8ZnYDT6qdpEksRBqEwhIqr9PovE4m5OQ6YbObsYtY/UUKDABSCANCYIq8PmGOyHXmEQAmum7RKNC/8QIC6BPVIy1wAwQKVBSIOBFHj19++pceEfWYeONBxoI4sQQF6YXq1KQaQEWoHwANQAO5krfGFZugl0oN0sAM7vPUZ4J1VP3495qmUA79baybUA6bgU6Toy9F32TTB2YaEyJDSpNSO7S0YGeOhiiUJg6up18hla1rQCsk6+pVdAFT6unp1lxdV6ObQSofGjd3KQJD+gzARSrl9yuTPqbrS9kPmAT5VArgRes4cbCIhSI0nPt0DYoD560gj/uHBySNGHhl/BNWiCGxaWLpaH5McY8AA3qkYkWICHHIXaxARIiV2Knnn+kFAAjRaBgMgQXAGOA/sQOgAFIj5EEl0856hoK0jP68uX+g9I0UjycdSU+QvpLYECaLUjGUJNH//QnoPPa4US9BGDVFpPYuBEWaPueKs87XbU+flp89QzuS0b2nUNvjx6Dz5InbeuZM7kCNpFiCMpUCGc/pbwcNqEWhTDFL78XCvX0fRBWxb+Mx5iSHzknwS+NXXFKhNEi0MXXXtqtbV2fTwpJnsUr7qe69N72eLk23dVd3sDK4eSPiySAYT+uLYX1FOlVErD87T+6E1XvPOoYeS+ge51ScE/ZVsm9G+o++ffXWnX/s4sxEB9NwtSJXsh9eyud21zVQEs2hw5YaodmwMTxvToCC0obT0XmCQOey+9Fy54TGlCaHyLQAxDvZzY4eFmbHaA15I2lIBPe6xvhcLvB3b+vssbWlUzt7fnUOUWwT90wMdc2imoX6Ah7WBPU71DgsBdV0lbtPVE/pV71wsefEgOqlyyMKPsy36MNpuVNAkOeXUlt8yO72jJDQmjQrvl7ji3BB/w8A3mMsR4d0P2rDSuwxm6V5rWDtsXg961dGxi8s9eKBVb71FCrg7UabEb7uug/7tTTmJs8Haaf6WMW5eron0xyDwvmIIZIb7Ew2VDOIUVEVbosiGpiXTYy7vy9OuIE9H9a41DzwBLW5pbH5TPems0pQrYsLrhbktNV9vK21GYBgNC/Bd2PNbAWfbz1Ncw9vm4E0fO+e/9fWzmt5ExtdEgSvrJQ/RKc9QCimD+WXs9pKmMkf4o2abrn8+UdOHEl5lAHWTUE0K4xM9bmNOPBXWI6IbRKKm1pPiIlJBvADwhdOXPSlIX98gzEKeE9DrspIEAGhUnnYmFgKwJw4cOIIhmKhg4XDEbjoCLAweQQK0OXjgsWTwCGqytWIQgVYBPLkg1moX1VAKJ8Xe/aY2NijClHYoRLgs8eHy0NleDVgcqF8FljJJYTbYm7EcoEcooQazYMLVL+KJhEdUyEeXN42ib1UVygBgmFJbWBQMWajg5mHbeNkL8tHRwMrRKChywMrOLDPJokQDRZHiI7QXxmtAzaEaXTlY4OjMEd2tdgFLD95ckmMK7KJvZkuCh6fLz5cRHDyLkQCcXgBL/BVdOWjXj4LFVhddvI1ye7yTgaTvTihoqVVMUWkOuwAAAA=)}
+@font-face{font-family:Asap Condensed;font-weight:650;src:url(data:font/woff2;base64,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)}
+.num{font:39.4px Figtree}
+.cap{font:77px Hanken Grotesk}
+.bar{font:33.1px Hanken Grotesk;letter-spacing:2.6px}
+.seg{font:41px Asap Condensed;fill:#fff;letter-spacing:3px}
+.sil{font:34.2px Asap Condensed;fill:#BCBDC0;letter-spacing:2px}
+.brk{font:37.9px Asap Condensed;fill:#8BB7D3;letter-spacing:2.8px;word-spacing:4.2px}
+</style>
+<defs>
+<line id="l" y2="-1068.8"/>
+<path id="h" d="M0 0l-14.2-14.2h-12.3l14.2 14.2-14.2 14.2h12.3z"/>
+</defs>
+<circle cx="2.5" cy="4.5" r="948" fill="none" stroke="#D1D2D4" stroke-width="45.7" pathLength="3600" stroke-dasharray="6.5 53.5" stroke-dashoffset="2.8"/>
+<circle r="938.6" fill="#D1D2D4"/>
+<g fill="none" stroke-width="320" transform="rotate(-90)">
+<g stroke="#7EB3D2">
+<circle r="778.6" pathLength="3600" stroke-dasharray="0 5 55 3600"/>
+<circle r="778.6" pathLength="3600" stroke-dasharray="0 1740 90 3600"/>
+</g>
+<g stroke="#231F20">
+<circle r="778.8" pathLength="3600" stroke-dasharray="0 60 280 3600"/>
+<circle r="779.1" pathLength="3600" stroke-dasharray="0 1830 210 3600"/>
+</g>
+<g stroke="#73A1AD">
+<circle r="778.6" pathLength="3600" stroke-dasharray="0 360 30 3600"/>
+<circle r="778.6" pathLength="3600" stroke-dasharray="0 1080 120 3600"/>
+<circle r="778.6" pathLength="3600" stroke-dasharray="0 1770 30 3600"/>
+<circle r="777" pathLength="3600" stroke-dasharray="0 2040 60 3600"/>
+<circle r="778.6" pathLength="3600" stroke-dasharray="0 2880 120 3600"/>
+<circle r="778.6" pathLength="3600" stroke-dasharray="0 3540 55 3600"/>
+</g>
+</g>
+<circle cx="3.5" cy="8.7" r="634" fill="#fff"/>
+<g fill="none" stroke="#EE2A2C" stroke-width="400" transform="rotate(-90)">
+<circle r="790.7" pathLength="3600" stroke-dasharray="0 340 20 3600"/>
+<circle r="738.4" pathLength="3600" stroke-dasharray="0 1200 35 3600"/>
+<circle r="737.9" pathLength="3600" stroke-dasharray="0 2100 35 3600"/>
+<circle r="795.1" pathLength="3600" stroke-dasharray="0 3490 50 3600"/>
+</g>
+<g stroke="#818285" stroke-width="4.6">
+<use href="#l" transform="rotate(0.5)"/>
+<use href="#l" transform="rotate(6)"/>
+<use href="#l" transform="rotate(24)"/>
+<use href="#l" transform="rotate(34)"/>
+<use href="#l" transform="rotate(36)"/>
+<use href="#l" transform="rotate(39)"/>
+<use href="#l" transform="rotate(108)"/>
+<use href="#l" transform="rotate(120)"/>
+<use href="#l" transform="rotate(123.5)"/>
+<use href="#l" transform="rotate(174)"/>
+<use href="#l" transform="rotate(177)"/>
+<use href="#l" transform="rotate(180)"/>
+<use href="#l" transform="rotate(183)"/>
+<use href="#l" transform="rotate(195)"/>
+<use href="#l" transform="rotate(204)"/>
+<use href="#l" transform="rotate(210)"/>
+<use href="#l" transform="rotate(213.5)"/>
+<use href="#l" transform="rotate(264)"/>
+<use href="#l" transform="rotate(288)"/>
+<use href="#l" transform="rotate(300)"/>
+<use href="#l" transform="rotate(349)"/>
+<use href="#l" transform="rotate(354)"/>
+</g>
+<circle cx="3.5" cy="8.7" r="613.3" fill="#fff"/>
+<g fill="none" stroke="#7EB3D2" stroke-width="8.4">
+<path d="M-26 930V1034.9H-216.8M63.2 930V1034.9H299.9"/>
+<path stroke-width="4.3" d="M-216.8 1021.3v27.2M299.9 1021.3v27.2"/>
+</g>
+<g fill="none" stroke="#EE2A2C" stroke-width="8.4">
+<circle r="951.4" pathLength="3600" stroke-dasharray="0 249 139 3600" transform="translate(12.5 -35.5) rotate(-90)"/>
+<circle r="894.6" pathLength="3600" stroke-dasharray="0 3500 100 3600" transform="translate(-18.9 -94.3) rotate(-90)"/>
+</g>
+<g fill="#EE2A2C">
+<use href="#h" transform="translate(406.3 -901.2) rotate(-154.2)"/>
+<use href="#h" transform="translate(618.1 -769.4) rotate(38.2)"/>
+<use href="#h" transform="translate(-9.4 -989.2) rotate(-0.6) scale(0.8)"/>
+</g>
+<rect x="-15.9" y="-940" width="16" height="320" fill="#fff"/>
+<g fill="#231F20">
+<rect x="-3.9" y="-1197" width="12.7" height="765.1"/>
+<g class="num">
+<text transform="translate(124.2 -1070.1) rotate(-85.27)">1:00</text>
+<text transform="translate(448.1 -980.5) rotate(-66.18)">4:00</text>
+<text transform="translate(610.5 -887.8) rotate(-56)" letter-spacing="0.5">5:40</text>
+<text transform="translate(644.5 -865.7) rotate(-54.29)" letter-spacing="0.4">6:00</text>
+<text transform="translate(691.4 -829) rotate(-52.15)" letter-spacing="0.5">6:30</text>
+<text transform="translate(1019.5 344) rotate(18)">18:00</text>
+<text transform="translate(925.8 552.9) rotate(29.36)" letter-spacing="0.3">20:00</text>
+<text transform="translate(893.5 605.7) rotate(32.74)">20:35</text>
+<text transform="translate(140.9 1182.2) rotate(-97.44)">29:00</text>
+<text transform="translate(79.1 1187.6) rotate(-92.69)">29:30</text>
+<text transform="translate(11.8 1197.1) rotate(-89)" letter-spacing="0.6">30:00</text>
+<text transform="translate(-50.7 1187.4) rotate(-86.58)">30:30</text>
+<text transform="translate(-294.2 1147.9) rotate(-74.79)">32:30</text>
+<text transform="translate(-469.7 1093.8) rotate(-65.7)">34:00</text>
+<text transform="translate(-581.1 1035.7) rotate(-60.08)">35:00</text>
+<text transform="translate(-639.3 993.1) rotate(-55.66)">35:35</text>
+<text transform="translate(-1181.6 139.1) rotate(-6)" letter-spacing="-0.3">44:00</text>
+<text transform="translate(-1136.7 -354.7) rotate(18)" letter-spacing="-0.4">48:00</text>
+<text transform="translate(-1041.2 -579.2) rotate(28.15)" letter-spacing="0.3">50:00</text>
+<text transform="translate(-237.2 -1155.3) rotate(78.24)" letter-spacing="-0.5">58:10</text>
+<text transform="translate(-140.5 -1183.5) rotate(83.68)" letter-spacing="0.6">59:00</text>
+<text transform="translate(44.7 -520.3) rotate(-86.78)">0:59</text>
+<text transform="translate(150.7 -502.7) rotate(-75.9)">2:59</text>
+<text transform="translate(267.1 -459.8) rotate(-61.79)">1:39</text>
+<text transform="translate(311.4 -422.4) rotate(-55.17)" letter-spacing="-0.4">0:19</text>
+<text transform="translate(336.2 -400.6) rotate(-52.33)">0:29</text>
+<text transform="translate(513.7 -98.4) rotate(-12.56)">11:29</text>
+<text transform="translate(492.9 234.8) rotate(25.5)">1:59</text>
+<text transform="translate(448.4 284.6) rotate(34.27)" letter-spacing="0.3">0:34</text>
+<text transform="translate(254.7 478.6) rotate(59.69)">8:24</text>
+<text transform="translate(60 618) rotate(-92.9)">0:29</text>
+<text transform="translate(26.9 619) rotate(-90.93)">0:29</text>
+<text transform="translate(-7 619) rotate(-89.93)">0:29</text>
+<text transform="translate(-84.9 611.7) rotate(-80.53)">1:59</text>
+<text transform="translate(-190.5 586.2) rotate(-69.87)">1:29</text>
+<text transform="translate(-262.8 555.9) rotate(-63.14)">0:59</text>
+<text transform="translate(-307.8 530) rotate(-58.56)" letter-spacing="0.6">0:34</text>
+<text transform="translate(-479.6 379.1) rotate(-37.27)">8:24</text>
+<text transform="translate(-604.9 -29.5) rotate(4.79)">3:59</text>
+<text transform="translate(-558 -228.2) rotate(24.29)">1:59</text>
+<text transform="translate(-361.7 -481.5) rotate(54.39)">8:09</text>
+<text transform="translate(-104.9 -588.5) rotate(80.15)">0:49</text>
+<text transform="translate(-53.9 -596.3) rotate(86.37)">0:54</text>
+</g>
+<g class="cap">
+<text transform="translate(737.8 -137.8)">A</text>
+<text transform="translate(361 722.2)">B</text>
+<text transform="translate(-669.2 460.6)">C</text>
+<text transform="translate(-812.2 -30.8)">D</text>
+<text transform="translate(-468.7 -605.8)">E</text>
+</g>
+<g class="bar">
+<text transform="translate(13.7 -1210.8) rotate(-90.37)">START</text>
+<text transform="translate(14.6 -239.3) rotate(-90.14)">DURATION</text>
+</g>
+</g>
+<g class="seg">
+<text transform="translate(51.4 -650.3) rotate(-87.5)" letter-spacing="4.3">BILLBOARD</text>
+<g letter-spacing="4.8">
+<text transform="translate(179 -629.6) rotate(-75)" word-spacing="-4.7">NEWSCAST 1</text>
+<text transform="translate(328.8 -568.8) rotate(-60.81)" word-spacing="-1.9">NEWSCAST 2</text>
+</g>
+<text transform="translate(423.5 -526.1) rotate(-53.76) scale(1 0.93)">MUSIC</text>
+<text transform="translate(597.7 285.1) rotate(24.74)">MUSIC</text>
+<text transform="translate(27.3 784.8) rotate(-91.4) scale(1 0.78)">MUSIC</text>
+<text transform="translate(-132.4 889.8) rotate(-80)" letter-spacing="4.9" word-spacing="-1.7">NEWSCAST 3</text>
+<text transform="translate(-288.1 855.5) rotate(-69.41)" letter-spacing="4.8">NEWSCAST 4</text>
+<text transform="translate(-338 708.5) rotate(-62.4)" letter-spacing="2.9">MUSIC</text>
+<text transform="translate(-721.1 -294.1) rotate(23.42)">MUSIC</text>
+<text transform="translate(-66.3 -765.4) rotate(87.1)" letter-spacing="2.9">MUSIC</text>
+</g>
+<text class="sil" transform="translate(-41.3 -1189.7) rotate(88)">0:05 SILENCE</text>
+<g class="brk">
+<text transform="translate(117.9 1022)" letter-spacing="2.3">ME PROMO</text>
+<text transform="translate(-202 1023.1)">RETURN</text>
+</g>
+</svg>
