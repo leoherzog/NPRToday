@@ -19,6 +19,56 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#FF3300">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://npr.today/#website",
+        "name": "NPR Today",
+        "alternateName": "NPR.Today",
+        "url": "https://npr.today/",
+        "inLanguage": "en-US",
+        "author": { "@id": "https://npr.today/#author" }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://npr.today/#app",
+        "name": "NPR Today",
+        "url": "https://npr.today/",
+        "description": "A beautiful HTML5 streaming audio player for NPR's 24 hour news",
+        "image": "https://npr.today/img/nprtoday.png",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires HTML5 audio and JavaScript",
+        "featureList": ["Live NPR program stream", "Hourly clock of the current NPR program"],
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": 0, "priceCurrency": "USD" },
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "about": { "@type": "Organization", "name": "NPR", "url": "https://www.npr.org/" },
+        "author": { "@id": "https://npr.today/#author" },
+        "isPartOf": { "@id": "https://npr.today/#website" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "codeRepository": "https://github.com/leoherzog/nprtoday",
+        "programmingLanguage": ["JavaScript", "HTML", "CSS"],
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "targetProduct": { "@id": "https://npr.today/#app" },
+        "author": { "@id": "https://npr.today/#author" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://npr.today/#author",
+        "name": "Leo Herzog",
+        "url": "https://herzog.tech/"
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Francois+One&family=Yeseva+One&display=swap">
